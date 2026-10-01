@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes logoPremium {
+  0% {
+    opacity: 0;
+    transform: scale(0.72);
+    filter: blur(12px);
+  }
+
+  45% {
+    opacity: 1;
+    transform: scale(1.04);
+    filter: blur(0);
+  }
+
+  70% {
+    transform: scale(0.98);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+.animate-logo-premium {
+  animation: logoPremium 1.15s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+
+@keyframes logoGlow {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.85);
+  }
+
+  50% {
+    opacity: 0.75;
+    transform: scale(1.12);
+  }
+}
+
+.animate-logo-glow {
+  animation: logoGlow 2s ease-in-out infinite;
+}
+
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-orbit {
+  animation: orbit 5s linear infinite;
+}
+
+
+@keyframes orbitReverse {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-orbit-reverse {
+  animation: orbitReverse 7s linear infinite;
+}
+
+
+@keyframes orbitSlow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-orbit-slow {
+  animation: orbitSlow 18s linear infinite;
+}
+
+
+@keyframes starOne {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(0.7);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+.animate-star-1 {
+  animation: starOne 2.2s ease-in-out infinite;
+}
+
+
+@keyframes starTwo {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-star-2 {
+  animation: starTwo 1.8s ease-in-out infinite 0.4s;
+}
+
+
+.animate-star-3 {
+  animation: starOne 2.5s ease-in-out infinite 0.8s;
+}
+
+
+.animate-star-4 {
+  animation: starTwo 2s ease-in-out infinite 1s;
+}
+
+
+@keyframes brandReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-brand {
+  animation: brandReveal 1s ease-out 0.5s both;
+}
+
+
+@keyframes loaderProgress {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.loader-progress {
+  animation: loaderProgress 1.35s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
