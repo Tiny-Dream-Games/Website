@@ -68,7 +68,7 @@ const projects = [
     description:
       "A modern business website focused on clear presentation, trust and lead generation.",
     status: "Completed",
-    image: "/web-projects/project-1.jpg",
+    image: "/image/business website.webp",
   },
   {
     title: "Digital Agency Website",
@@ -76,7 +76,7 @@ const projects = [
     description:
       "A conversion-focused digital presence with structured content and a modern visual system.",
     status: "In Development",
-    image: "/web-projects/project-2.jpg",
+    image: "/image/digital agency website.webp",
   },
   {
     title: "Custom Web Experience",
@@ -84,7 +84,7 @@ const projects = [
     description:
       "A custom web experience designed around a specific business idea and user journey.",
     status: "Coming Soon",
-    image: "/web-projects/project-3.jpg",
+    image: "/image/custom website.webp",
   },
 ];
 
@@ -250,7 +250,7 @@ export default function WebDevelopmentPage() {
             <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-[#151D2E] p-3 shadow-2xl">
               <div className="relative aspect-[4/3] overflow-hidden rounded-[22px]">
                 <img
-                  src="/web-projects/hero-website.jpg"
+                  src="/image/Web developer.webp"
                   alt="Tiny Dream Games web development project"
                   className="h-full w-full object-cover transition duration-700 hover:scale-105"
                 />
@@ -352,12 +352,12 @@ export default function WebDevelopmentPage() {
             </p>
           </div>
 
-          <Link
+          {/* <Link
             href="/#portfolio"
             className="text-sm font-semibold text-[#A78BFA] transition hover:text-white"
           >
             View all projects →
-          </Link>
+          </Link> */}
         </div>
 
         <div className="mt-14 grid gap-7 lg:grid-cols-3">
@@ -391,12 +391,12 @@ export default function WebDevelopmentPage() {
                   {project.description}
                 </p>
 
-                <button className="mt-6 inline-flex items-center text-sm font-semibold text-white transition group-hover:text-[#A78BFA]">
+                {/* <button className="mt-6 inline-flex items-center text-sm font-semibold text-white transition group-hover:text-[#A78BFA]">
                   View Project
                   <span className="ml-2 transition-transform group-hover:translate-x-1">
                     →
                   </span>
-                </button>
+                </button> */}
               </div>
             </article>
           ))}

@@ -234,10 +234,7 @@ export default function REVIEWS() {
           ))}
         </div>
 
-        {/* PLACEHOLDER NOTICE */}
-        <p className="mt-8 text-center text-xs text-gray-600">
-          Testimonials will be replaced with verified client feedback.
-        </p>
+      
       </div>
     </section>
   );

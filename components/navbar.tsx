@@ -25,7 +25,7 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-9 md:flex">
           <a
-            href="#games"
+            href="/#games"
             className="text-sm text-white/70 transition hover:text-white"
           >
             Games
@@ -71,7 +71,7 @@ export default function Navbar() {
                 <div className="grid grid-cols-3 gap-3">
                   {/* Games */}
                   <a
-                    href="#games"
+                    href="/services/game-development"
                     className="group/card rounded-2xl border border-white/5 bg-white/[0.035] p-5 transition duration-300 hover:border-[#7C3AED]/30 hover:bg-[#7C3AED]/10"
                   >
                     <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#7C3AED]/15 text-[#A78BFA]">
@@ -120,7 +120,7 @@ export default function Navbar() {
 
                   {/* Web */}
                   <a
-                    href="#services"
+                    href="/services/web-development"
                     className="group/card rounded-2xl border border-white/5 bg-white/[0.035] p-5 transition duration-300 hover:border-[#7C3AED]/30 hover:bg-[#7C3AED]/10"
                   >
                     <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#A78BFA]/15 text-[#A78BFA]">
@@ -157,7 +157,7 @@ export default function Navbar() {
 
                   {/* Apps */}
                   <a
-                    href="#services"
+                    href="/services/app-development"
                     className="group/card rounded-2xl border border-white/5 bg-white/[0.035] p-5 transition duration-300 hover:border-[#7C3AED]/30 hover:bg-[#7C3AED]/10"
                   >
                     <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#FACC15]/10 text-[#FACC15]">
@@ -203,7 +203,7 @@ export default function Navbar() {
                   </div>
 
                   <a
-                    href="#contact"
+                    href="/contact"
                     className="rounded-full bg-white px-4 py-2 text-xs font-semibold text-[#111827] transition hover:bg-[#A78BFA] hover:text-white"
                   >
                     Start a Project
@@ -214,14 +214,20 @@ export default function Navbar() {
           </div>
 
           <a
-            href="#about"
+            href="/about"
             className="text-sm text-white/70 transition hover:text-white"
           >
             About
           </a>
+          <a
+            href="/contact"
+            className="text-sm text-white/70 transition hover:text-white"
+          >
+            Contact
+          </a>
 
           <a
-            href="#contact"
+            href="/#contact"
             className="rounded-full border border-white/15 bg-white/[0.06] px-5 py-2.5 text-sm font-medium text-white transition hover:border-[#A78BFA]/50 hover:bg-[#7C3AED]/20"
           >
             Let's Talk
@@ -266,21 +272,21 @@ export default function Navbar() {
 
               <div className="ml-3 mt-1 space-y-1 border-l border-white/10 pl-3">
                 <a
-                  href="#games"
+                  href="/services/game-development"
                   className="block rounded-lg px-3 py-2.5 text-xs text-white/50 hover:bg-white/5 hover:text-white"
                 >
                   Game Development
                 </a>
 
                 <a
-                  href="#services"
+                  href="/services/web-development"
                   className="block rounded-lg px-3 py-2.5 text-xs text-white/50 hover:bg-white/5 hover:text-white"
                 >
                   Web Development
                 </a>
 
                 <a
-                  href="#services"
+                  href="/services/app-development"
                   className="block rounded-lg px-3 py-2.5 text-xs text-white/50 hover:bg-white/5 hover:text-white"
                 >
                   App Development
@@ -289,14 +295,20 @@ export default function Navbar() {
             </details>
 
             <a
-              href="#about"
+              href="/about"
               className="block rounded-xl px-4 py-3 text-sm text-white/70 transition hover:bg-white/5 hover:text-white"
             >
               About
             </a>
+            <a
+              href="/contact"
+              className="block rounded-xl px-4 py-3 text-sm text-white/70 transition hover:bg-white/5 hover:text-white"
+            >
+              Contact
+            </a>
 
             <a
-              href="#contact"
+              href="/#contact"
               className="mt-1 block rounded-xl bg-[#7C3AED]/20 px-4 py-3 text-sm font-medium text-white transition hover:bg-[#7C3AED]/30"
             >
               Let's Talk

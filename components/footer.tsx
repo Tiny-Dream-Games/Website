@@ -4,9 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-
 export default function Navbar() {
-  
   return (
     <footer className="relative overflow-hidden bg-[#0B1020] px-6 pt-15 text-white lg:px-10 lg:pt-15">
       {/* Background glows */}
@@ -43,7 +41,7 @@ export default function Navbar() {
             <div className="mt-7 flex items-center gap-3">
               {/* Instagram */}
               <a
-                href="#"
+                href="https://www.instagram.com/tinydreamgames/"
                 aria-label="Instagram"
                 className="group flex h-11 w-11 items-center justify-center rounded-full border border-white/[0.09] bg-white/[0.025] transition-all duration-300 hover:-translate-y-1 hover:border-[#A78BFA]/40 hover:bg-[#7C3AED]/10"
               >
@@ -70,7 +68,7 @@ export default function Navbar() {
 
               {/* YouTube */}
               <a
-                href="#"
+                href="https://www.youtube.com/@TinyDreamGamesStudio"
                 aria-label="YouTube"
                 className="group flex h-11 w-11 items-center justify-center rounded-full border border-white/[0.09] bg-white/[0.025] transition-all duration-300 hover:-translate-y-1 hover:border-red-400/30 hover:bg-red-500/10"
               >
@@ -85,7 +83,7 @@ export default function Navbar() {
 
               {/* LinkedIn */}
               <a
-                href="#"
+                href="https://www.linkedin.com/company/tiny-dream-games/"
                 aria-label="LinkedIn"
                 className="group flex h-11 w-11 items-center justify-center rounded-full border border-white/[0.09] bg-white/[0.025] transition-all duration-300 hover:-translate-y-1 hover:border-blue-400/30 hover:bg-blue-500/10"
               >
@@ -115,7 +113,7 @@ export default function Navbar() {
 
               {/* X */}
               <a
-                href="#"
+                href="https://x.com/tinydreamgames"
                 aria-label="X"
                 className="group flex h-11 w-11 items-center justify-center rounded-full border border-white/[0.09] bg-white/[0.025] transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.07]"
               >
@@ -205,21 +203,21 @@ export default function Navbar() {
 
             <nav className="mt-6 flex flex-col gap-4">
               <a
-                href="#services"
+                href="/services/game-development"
                 className="w-fit text-sm text-white/45 transition hover:translate-x-1 hover:text-white"
               >
                 Game Development
               </a>
 
               <a
-                href="#services"
+                href="/services/web-development"
                 className="w-fit text-sm text-white/45 transition hover:translate-x-1 hover:text-white"
               >
                 Web Development
               </a>
 
               <a
-                href="#services"
+                href="/services/app-development"
                 className="w-fit text-sm text-white/45 transition hover:translate-x-1 hover:text-white"
               >
                 App Development
@@ -247,7 +245,7 @@ export default function Navbar() {
             <div className="mt-7 space-y-5">
               {/* EMAIL */}
               <a
-                href="mailto:hello@tinydreamgames.com"
+                href="mailto:tinydreamgamesstudio@gmail.com"
                 className="group flex gap-4"
               >
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#7C3AED]/25 bg-[#7C3AED]/10 text-[#A78BFA] transition group-hover:border-[#A78BFA]/40 group-hover:bg-[#7C3AED]/15">
@@ -271,13 +269,13 @@ export default function Navbar() {
                   </span>
 
                   <span className="mt-1 block text-sm text-white/40 transition group-hover:text-white/60">
-                    hello@tinydreamgames.com
+                    tinydreamgamesstudio@gmail.com
                   </span>
                 </span>
               </a>
 
               {/* PHONE */}
-              <a href="tel:+91XXXXXXXXXX" className="group flex gap-4">
+              <a href="tel:+918267093024" className="group flex gap-4">
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#FACC15]/20 bg-[#FACC15]/10 text-[#FACC15] transition group-hover:border-[#FACC15]/40">
                   <svg
                     className="h-5 w-5"
@@ -298,7 +296,7 @@ export default function Navbar() {
                   </span>
 
                   <span className="mt-1 block text-sm text-white/40 transition group-hover:text-white/60">
-                    +91 XXXXX XXXXX
+                    +91 8267093024
                   </span>
                 </span>
               </a>
@@ -326,7 +324,7 @@ export default function Navbar() {
                   </span>
 
                   <span className="mt-1 block text-sm leading-6 text-white/40">
-                    Your City, State
+                    Agra, Uttar Pradesh
                     <br />
                     India
                   </span>
@@ -347,7 +345,7 @@ export default function Navbar() {
 
           <div className="flex flex-wrap items-center gap-5">
             <a
-              href="#"
+              href="/privacy-policy"
               className="text-white/20 transition hover:text-white/50"
             >
               Privacy Policy
@@ -356,19 +354,17 @@ export default function Navbar() {
             <span className="h-3 w-px bg-white/10" />
 
             <a
-              href="#"
+              href="/terms-and-conditions"
               className="text-white/20 transition hover:text-white/50"
             >
               Terms of Service
             </a>
-
-            
           </div>
         </div>
       </div>
       {/* ================= FLOATING WHATSAPP ================= */}
       <a
-        href="https://wa.me/91XXXXXXXXXX"
+        href="https://wa.me/918267093024"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with Tiny Dream Games on WhatsApp"

@@ -345,86 +345,221 @@ export default function GameDevelopmentPage() {
         </section>
 
         {/* WORKING PRODUCTS */}
-        <section id="games" className="mx-auto max-w-7xl px-6 py-18 lg:px-8">
-          <div className="flex flex-col justify-between gap-7 md:flex-row md:items-end">
-            <div className="max-w-2xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#A78BFA]">
-                Our Work
-              </p>
+        <section
+          id="games"
+          className="relative overflow-hidden bg-[#111827] px-6 py-24 lg:px-10 lg:py-28"
+        >
+          {/* Background Glow */}
+          <div className="pointer-events-none absolute left-1/2 top-0 h-[500px] w-[850px] -translate-x-1/2 rounded-full bg-[#7C3AED]/10 blur-[150px]" />
 
-              <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-                Built. Played. Experienced.
+          <div className="relative z-10 mx-auto max-w-7xl">
+            {/* ================= SECTION HEADER ================= */}
+
+            <div className="max-w-3xl">
+              <div className="mb-5 flex items-center gap-3">
+                <span className="h-px w-8 bg-[#FACC15]" />
+
+                <span className="text-xs font-medium uppercase tracking-[0.22em] text-[#A78BFA]">
+                  Our Games
+                </span>
+              </div>
+
+              <h2 className="text-4xl font-semibold tracking-[-0.045em] text-white sm:text-5xl lg:text-6xl">
+                Games we&apos;ve
+                <br />
+                <span className="bg-gradient-to-r from-[#A78BFA] via-[#C084FC] to-[#FACC15] bg-clip-text text-transparent">
+                  dreamed up.
+                </span>
               </h2>
 
-              <p className="mt-5 text-lg leading-8 text-gray-400">
-                Explore games and prototypes created by Tiny Dream Games.
+              <p className="mt-5 max-w-2xl text-sm leading-7 text-white/45 sm:text-base">
+                Original games, imaginative worlds and experiences we&apos;re
+                building from the ground up.
               </p>
             </div>
 
-            <Link
-              href="/#games"
-              className="text-sm font-semibold text-[#A78BFA] transition hover:text-white"
-            >
-              View all games →
-            </Link>
-          </div>
+            {/* =========================================================
+        COMPLETED / ACTIVE GAMES
+    ========================================================= */}
 
-          <div className="mt-14 grid gap-7 lg:grid-cols-3">
-            {games.map((game, index) => (
-              <article
-                key={index}
-                className="group overflow-hidden rounded-3xl border border-white/10 bg-[#151D2E] transition duration-300 hover:-translate-y-1 hover:border-purple-400/30"
-              >
-                <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-purple-900/40 to-[#0B1020]">
-                  {/* Replace with next/image when you add actual images */}
+            <div className="mt-20">
+              {/* GAME 01 */}
 
-                  <div className="absolute inset-0 flex items-center justify-center text-center">
-                    <div>
-                      <div className="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/5 text-[#A78BFA]">
-                        <svg
-                          width="25"
-                          height="25"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="1.5"
-                        >
-                          <path d="M14.5 6.5h-5A5.5 5.5 0 0 0 4 12v1.5a3.5 3.5 0 0 0 6.7 1.4l.5-1h1.6l.5 1a3.5 3.5 0 0 0 6.7-1.4V12a5.5 5.5 0 0 0-5.5-5.5Z" />
-                          <path d="M8 10v4M6 12h4M16.5 11h.01M18.5 13h.01" />
-                        </svg>
+              <article className="group">
+                <div className="grid items-center gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:gap-16">
+                  {/* Visual */}
+                  <div className="relative overflow-hidden rounded-[32px] border border-white/[0.08] bg-[#0B1020]">
+                    {/* Video */}
+                    <div className="relative aspect-[16/9] overflow-hidden">
+                      <video
+                        src="/videos/gameplay.mp4"
+                        poster="/logo-dark.png"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                        className="h-full w-full object-cover transition duration-1000 group-hover:scale-[1.035]"
+                      />
+
+                      {/* Overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#0B1020]/80 via-transparent to-transparent" />
+
+                      {/* Status */}
+                      <div className="absolute left-5 top-5">
+                        <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#111827]/75 px-3.5 py-2 backdrop-blur-xl">
+                          <span className="h-1.5 w-1.5 rounded-full bg-[#FACC15] shadow-[0_0_10px_#FACC15]" />
+
+                          <span className="text-[9px] font-medium uppercase tracking-[0.18em] text-white/75">
+                            In Development
+                          </span>
+                        </div>
                       </div>
-
-                      <p className="text-sm text-gray-500">
-                        Game Preview {index + 1}
-                      </p>
                     </div>
                   </div>
 
-                  <span className="absolute left-4 top-4 rounded-full border border-white/10 bg-black/40 px-3 py-1.5 text-xs backdrop-blur-md">
-                    {game.status}
-                  </span>
-                </div>
+                  {/* Information */}
+                  <div className="lg:py-8">
+                    {/* Category */}
+                    <p className="text-[10px] font-medium uppercase tracking-[0.22em] text-[#A78BFA]">
+                      Arcade • Casual
+                    </p>
 
-                <div className="p-7">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-[#A78BFA]">
-                    {game.genre}
-                  </p>
+                    {/* Title */}
+                    <h3 className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl">
+                      Untitled
+                    </h3>
 
-                  <h3 className="mt-3 text-2xl font-semibold">{game.title}</h3>
+                    {/* Description */}
+                    <p className="mt-5 text-sm leading-7 text-white/45 sm:text-base">
+                      Our first mobile game is currently in development. More
+                      details, gameplay and the official title will be revealed
+                      soon.
+                    </p>
 
-                  <p className="mt-3 leading-7 text-gray-400">
-                    {game.description}
-                  </p>
+                    {/* Details */}
+                    <div className="mt-8 space-y-3 border-y border-white/[0.08] py-5">
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs text-white/35">Platform</span>
 
-                  <button className="mt-6 inline-flex items-center text-sm font-semibold text-white transition group-hover:text-[#A78BFA]">
-                    View Project
-                    <span className="ml-2 transition-transform group-hover:translate-x-1">
-                      →
-                    </span>
-                  </button>
+                        <span className="text-xs text-white/70">Android</span>
+                      </div>
+
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs text-white/35">Status</span>
+
+                        <span className="text-xs text-[#A78BFA]">
+                          In Development
+                        </span>
+                      </div>
+
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs text-white/35">Genre</span>
+
+                        <span className="text-xs text-white/70">
+                          Arcade • Casual
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* CTA */}
+                    <div className="mt-7">
+                      <a
+                        href="#"
+                        className="group/link inline-flex items-center gap-3 text-sm font-medium text-white transition"
+                      >
+                        <span>Explore Game</span>
+
+                        <span className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/50 transition duration-300 group-hover/link:border-[#A78BFA]/30 group-hover/link:bg-[#7C3AED]/10 group-hover/link:text-[#A78BFA]">
+                          →
+                        </span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </article>
-            ))}
+
+              {/* ================= FUTURE GAMES ================= */}
+
+              <div className="mt-24 border-t border-white/[0.08] pt-16">
+                <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+                  <div>
+                    <p className="text-[10px] font-medium uppercase tracking-[0.22em] text-[#A78BFA]">
+                      What&apos;s next
+                    </p>
+
+                    <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-white sm:text-3xl">
+                      More worlds are coming.
+                    </h3>
+                  </div>
+
+                  <p className="max-w-md text-sm leading-6 text-white/35">
+                    We&apos;re constantly exploring new ideas, mechanics and
+                    worlds. Some of them are still taking shape.
+                  </p>
+                </div>
+
+                {/* Upcoming Game 01 */}
+
+                <div className="mt-10 border-b border-white/[0.08] py-7">
+                  <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+                    <div className="flex items-center gap-5">
+                      <span className="text-xs font-medium tracking-[0.18em] text-white/20">
+                        01
+                      </span>
+
+                      <div>
+                        <p className="text-[10px] uppercase tracking-[0.18em] text-white/30">
+                          Upcoming Project
+                        </p>
+
+                        <h4 className="mt-1 text-lg font-medium text-white">
+                          DODA - The fun ball
+                        </h4>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-6">
+                      <span className="text-xs text-white/30">Coming Soon</span>
+
+                      <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 text-white/30">
+                        →
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Upcoming Game 02 */}
+
+                <div className="border-b border-white/[0.08] py-7">
+                  <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+                    <div className="flex items-center gap-5">
+                      <span className="text-xs font-medium tracking-[0.18em] text-white/20">
+                        02
+                      </span>
+
+                      <div>
+                        <p className="text-[10px] uppercase tracking-[0.18em] text-white/30">
+                          Future Project
+                        </p>
+
+                        <h4 className="mt-1 text-lg font-medium text-white">
+                          Something new is brewing
+                        </h4>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-6">
+                      <span className="text-xs text-white/30">TBA</span>
+
+                      <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 text-white/30">
+                        →
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

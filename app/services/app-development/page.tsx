@@ -68,7 +68,7 @@ const projects = [
     description:
       "A focused mobile experience designed to make everyday business interactions simpler.",
     status: "Completed",
-    image: "/app-projects/project-1.jpg",
+    image: "/image/Business App.webp",
   },
   {
     title: "Service Application",
@@ -76,7 +76,7 @@ const projects = [
     description:
       "A user-focused application built around service discovery, interaction and streamlined workflows.",
     status: "In Development",
-    image: "/app-projects/project-2.jpg",
+    image: "/image/Service Application.webp",
   },
   {
     title: "Custom Product App",
@@ -84,7 +84,7 @@ const projects = [
     description:
       "A custom application experience designed around a specific product concept and user journey.",
     status: "Coming Soon",
-    image: "/app-projects/project-3.jpg",
+    image: "/image/Custom Product App.webp",
   },
 ];
 
@@ -434,12 +434,12 @@ export default function AppDevelopmentPage() {
             </p>
           </div>
 
-          <Link
+          {/* <Link
             href="/#portfolio"
             className="text-sm font-semibold text-[#A78BFA] transition hover:text-white"
           >
             View all projects →
-          </Link>
+          </Link> */}
         </div>
 
         <div className="mt-14 grid gap-7 lg:grid-cols-3">
@@ -473,12 +473,12 @@ export default function AppDevelopmentPage() {
                   {project.description}
                 </p>
 
-                <button className="mt-6 inline-flex items-center text-sm font-semibold text-white transition group-hover:text-[#A78BFA]">
+                {/* <button className="mt-6 inline-flex items-center text-sm font-semibold text-white transition group-hover:text-[#A78BFA]">
                   View Project
                   <span className="ml-2 transition-transform group-hover:translate-x-1">
                     →
                   </span>
-                </button>
+                </button> */}
               </div>
             </article>
           ))}
