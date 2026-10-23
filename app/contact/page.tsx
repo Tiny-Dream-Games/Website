@@ -82,7 +82,7 @@ export default function ContactPage() {
                 </a>
               </div>
 
-              <div>
+              <div> 
                 <p className="text-[10px] uppercase tracking-[0.18em] text-white/25">
                   WhatsApp
                 </p>

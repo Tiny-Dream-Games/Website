@@ -268,78 +268,100 @@ export default function Home() {
             {/* GAME 01 */}
 
             <article className="group">
-              <div className="grid items-center gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:gap-16">
-                {/* Visual */}
-                <div className="relative overflow-hidden rounded-[32px] border border-white/[0.08] bg-[#0B1020]">
-                  {/* Video */}
-                  <div className="relative aspect-[16/9] overflow-hidden">
-                    <video
-                      src="/videos/gameplay.mp4"
-                      poster="/logo-dark.png"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      preload="metadata"
-                      className="h-full w-full object-cover transition duration-1000 group-hover:scale-[1.035]"
-                    />
+              <div className="grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+                {/* PORTRAIT GAMEPLAY VIDEO */}
+                <div className="relative mx-auto w-full max-w-[320px]">
+                  <div className="absolute -inset-5 rounded-[40px] bg-purple-600/10 blur-3xl" />
 
-                    {/* Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0B1020]/80 via-transparent to-transparent" />
+                  <div className="relative overflow-hidden rounded-[32px] border border-white/[0.08] bg-[#0B1020] p-2.5 shadow-2xl">
+                    <div className="relative aspect-[9/16] overflow-hidden rounded-[24px] bg-black">
+                      <video
+                        src="/videos/brick-breaker-game-play.mp4"
+                        poster="/image/brick-breaker/screenshot-1.webp"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        controls
+                        preload="metadata"
+                        className="absolute inset-0 h-full w-full object-contain transition duration-700 group-hover:scale-[1.02]"
+                      />
 
-                    {/* Status */}
-                    <div className="absolute left-5 top-5">
-                      <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#111827]/75 px-3.5 py-2 backdrop-blur-xl">
-                        <span className="h-1.5 w-1.5 rounded-full bg-[#FACC15] shadow-[0_0_10px_#FACC15]" />
+                      {/* GRADIENT OVERLAY */}
+                      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0B1020]/50 via-transparent to-[#0B1020]/20" />
 
-                        <span className="text-[9px] font-medium uppercase tracking-[0.18em] text-white/75">
-                          In Development
-                        </span>
+                      {/* STATUS */}
+                      <div className="pointer-events-none absolute left-4 top-4">
+                        <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#111827]/75 px-3 py-2 backdrop-blur-xl">
+                          <span className="h-1.5 w-1.5 rounded-full bg-[#FACC15]" />
+                          <span className="text-[9px] font-medium uppercase tracking-[0.16em] text-white/80">
+                            Mobile Gameplay
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
+
+                  {/* VIDEO CAPTION */}
+                  <p className="mt-4 text-center text-xs tracking-wide text-white/35">
+                    BRICK BREAKER · UNITY 2D
+                  </p>
                 </div>
 
-                {/* Information */}
+                {/* GAME INFORMATION */}
                 <div className="lg:py-8">
-                  {/* Category */}
+                  {/* CATEGORY */}
                   <p className="text-[10px] font-medium uppercase tracking-[0.22em] text-[#A78BFA]">
-                    Arcade • Casual
+                    Arcade · Casual · Mobile
                   </p>
 
-                  {/* Title */}
-                  <h3 className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl">
-                    Untitled
+                  {/* TITLE */}
+                  <h3 className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
+                    BRICK
+                    <span className="block bg-gradient-to-r from-[#A78BFA] via-[#7C3AED] to-[#FACC15] bg-clip-text text-transparent">
+                      BREAKER
+                    </span>
                   </h3>
 
-                  {/* Description */}
-                  <p className="mt-5 text-sm leading-7 text-white/45 sm:text-base">
-                    Our first mobile game is currently in development. More
-                    details, gameplay and the official title will be revealed
-                    soon.
+                  {/* DESCRIPTION */}
+                  <p className="mt-5 max-w-xl text-sm leading-7 text-white/55 sm:text-base">
+                    A classic brick-breaking arcade game developed by Tiny Dream
+                    Games. Control the paddle, keep the ball in play and break
+                    through challenging brick formations in a responsive 2D
+                    mobile gaming experience powered by Unity.
                   </p>
 
-                  {/* Details */}
-                  <div className="mt-8 space-y-3 border-y border-white/[0.08] py-5">
-                    <div className="flex items-center justify-between">
+                  {/* GAME DETAILS */}
+                  <div className="mt-8 space-y-4 border-y border-white/[0.08] py-5">
+                    <div className="flex items-center justify-between gap-4">
                       <span className="text-xs text-white/35">Platform</span>
-
-                      <span className="text-xs text-white/70">Android</span>
+                      <span className="text-xs text-white/75">Mobile</span>
                     </div>
 
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs text-white/35">Status</span>
+                    <div className="flex items-center justify-between gap-4">
+                      <span className="text-xs text-white/35">Engine</span>
+                      <span className="text-xs text-white/75">Unity 2D</span>
+                    </div>
 
-                      <span className="text-xs text-[#A78BFA]">
-                        In Development
+                    <div className="flex items-center justify-between gap-4">
+                      <span className="text-xs text-white/35">Genre</span>
+                      <span className="text-xs text-white/75">
+                        Arcade · Casual
                       </span>
                     </div>
 
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs text-white/35">Genre</span>
+                    <div className="flex items-center justify-between gap-4">
+                      <span className="text-xs text-white/35">Developer</span>
+                      <span className="text-xs text-white/75">
+                        Tiny Dream Games
+                      </span>
+                    </div>
 
-                      <span className="text-xs text-white/70">
-                        Arcade • Casual
+                    <div className="flex items-center justify-between gap-4">
+                      <span className="text-xs text-white/35">Status</span>
+                      <span className="inline-flex items-center gap-2 text-xs text-[#A78BFA]">
+                        <span className="h-1.5 w-1.5 rounded-full bg-[#A78BFA]" />
+                        In Development
                       </span>
                     </div>
                   </div>
@@ -347,12 +369,12 @@ export default function Home() {
                   {/* CTA */}
                   <div className="mt-7">
                     <a
-                      href="#"
+                      href="/games/brick-breaker"
                       className="group/link inline-flex items-center gap-3 text-sm font-medium text-white transition"
                     >
                       <span>Explore Game</span>
 
-                      <span className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/50 transition duration-300 group-hover/link:border-[#A78BFA]/30 group-hover/link:bg-[#7C3AED]/10 group-hover/link:text-[#A78BFA]">
+                      <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/50 transition duration-300 group-hover/link:border-[#A78BFA]/30 group-hover/link:bg-[#7C3AED]/10 group-hover/link:text-[#A78BFA]">
                         →
                       </span>
                     </a>
@@ -362,7 +384,6 @@ export default function Home() {
             </article>
 
             {/* ================= FUTURE GAMES ================= */}
-
             <div className="mt-24 border-t border-white/[0.08] pt-16">
               <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
                 <div>
