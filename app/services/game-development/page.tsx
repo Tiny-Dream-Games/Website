@@ -5,22 +5,167 @@ import Footer from "@/components/footer";
 import FAQ from "@/components/FAQ";
 import Reviews from "@/components/reviews";
 
+
 export const metadata: Metadata = {
-  title: "Game Development Services | Tiny Dream Games",
+  title: "Game Development Services",
   description:
-    "Tiny Dream Games creates engaging 2D and 3D games for mobile and digital platforms, from game concepts and prototypes to development, optimization and launch.",
+    "Tiny Dream Games provides game development services, including Unity game development, 2D and 3D games, mobile games, and custom game prototypes.",
+
   alternates: {
     canonical: "/services/game-development",
   },
+
   openGraph: {
+    type: "website",
+    locale: "en_IN",
+    siteName: "Tiny Dream Games",
+    url: "/services/game-development",
     title: "Game Development Services | Tiny Dream Games",
     description:
-      "From game concept to playable product — Tiny Dream Games builds polished and engaging games for modern platforms.",
-    url: "/services/game-development",
-    siteName: "Tiny Dream Games",
-    type: "website",
+      "Explore Unity game development, 2D and 3D game creation, mobile games, and custom game development services by Tiny Dream Games.",
+    images: [
+      {
+        url: "/tiny-dream-logo.png",
+        alt: "Tiny Dream Games — Game Development Services",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Game Development Services | Tiny Dream Games",
+    description:
+      "Unity, 2D, 3D, and mobile game development services by Tiny Dream Games.",
+    images: ["/tiny-dream-logo.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
+
+
+
+const gameDevelopmentSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.tinydreamgames.com/services/game-development#service",
+      name: "Game Development Services",
+      serviceType: "Game Development",
+      url: "https://www.tinydreamgames.com/services/game-development",
+      description:
+        "Tiny Dream Games provides game development services for businesses, creators, and projects requiring custom game experiences.",
+      provider: {
+        "@type": "Organization",
+        "@id": "https://www.tinydreamgames.com/#organization",
+        name: "Tiny Dream Games",
+        url: "https://www.tinydreamgames.com/",
+      },
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.tinydreamgames.com/services/game-development#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What game development services do you offer?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Tiny Dream Games offers custom game development services, including 2D game development, mobile game development, gameplay programming, game UI implementation and prototype development based on project requirements.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much does custom game development cost?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Game development costs depend on the game's complexity, platform, graphics, gameplay mechanics, features and development scope. We discuss your game idea and requirements before determining a suitable project quotation.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long does it take to develop a game?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The development timeline depends on the game's scope, art requirements, gameplay systems, number of levels, testing and target platforms. A small prototype generally requires less time than a complete, feature-rich game.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do you develop games using Unity?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Unity can be used for suitable game projects, including 2D and 3D games, gameplay systems, user interfaces, physics interactions and mobile game experiences, depending on the project requirements.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you develop 2D and 3D games?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We can work on 2D and 3D game development projects based on their requirements, including gameplay mechanics, player controls, level design implementation, user interfaces and other required game systems.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do you develop games for Android and mobile devices?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We can develop mobile-focused game experiences with touch controls, responsive game interfaces and performance considerations. Supported platforms and device requirements are determined during project planning.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you turn my game idea into a playable prototype?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A game prototype can help test the core gameplay, controls and main mechanics before full production. The prototype scope depends on your concept, desired features and project requirements.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you add custom gameplay mechanics and features?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Depending on the project scope, custom gameplay features may include player movement, combat systems, enemy AI, scoring, health systems, level progression, game menus and sound effects.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you help publish my game?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Game publishing requirements depend on the target platform and project scope. We can discuss build preparation, platform requirements and the technical steps needed to prepare a game for release.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you improve or update an existing game?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Existing games may need bug fixes, gameplay improvements, UI updates, performance optimization or new features. We can review the project's requirements and technical setup to determine the appropriate improvements.",
+          },
+        },
+      ],
+    },
+  ],
+};
+
+function GameDevelopmentJsonLd() {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(gameDevelopmentSchema).replace(/</g, "\\u003c"),
+      }}
+    />
+  );
+}
+
+
 
 const services = [
   {
@@ -117,71 +262,65 @@ const process = [
   },
 ];
 
+
 const faqs = [
   {
-    question: "What kind of games can you develop?",
+    question: "What game development services do you offer?",
     answer:
-      "We develop custom 2D and 3D games for mobile and digital platforms. Projects can range from casual and action games to adventure, endless runner and other custom gameplay concepts.",
+      "Tiny Dream Games offers custom game development services, including 2D game development, mobile game development, gameplay programming, game UI implementation and prototype development based on project requirements.",
   },
   {
-    question: "Can you turn my game idea into a playable product?",
+    question: "How much does custom game development cost?",
     answer:
-      "Yes. We can work with an existing game concept or help shape an early idea into a playable product. We can define the core gameplay, mechanics, features and development requirements based on your vision.",
+      "Game development costs depend on the game's complexity, platform, graphics, gameplay mechanics, features and development scope. We discuss your game idea and requirements before determining a suitable project quotation.",
   },
   {
-    question: "Do you develop both 2D and 3D games?",
+    question: "How long does it take to develop a game?",
     answer:
-      "Yes. We work on both 2D and 3D game projects. The development approach, assets, gameplay systems and technology are planned according to the requirements of each game.",
+      "The development timeline depends on the game's scope, art requirements, gameplay systems, number of levels, testing and target platforms. A small prototype generally requires less time than a complete, feature-rich game.",
   },
   {
-    question: "Do you develop games for mobile?",
+    question: "Do you develop games using Unity?",
     answer:
-      "Yes. Mobile game development is one of our core areas. We focus on responsive touch controls, smooth gameplay and performance considerations for mobile devices.",
+      "Yes. Unity can be used for suitable game projects, including 2D and 3D games, gameplay systems, user interfaces, physics interactions and mobile game experiences, depending on the project requirements.",
   },
   {
-    question: "What does your game development process look like?",
+    question: "Can you develop 2D and 3D games?",
     answer:
-      "Our process typically starts with understanding the idea, followed by planning the gameplay and features, building the game, testing and polishing the experience, and finally preparing the product for launch.",
+      "We can work on 2D and 3D game development projects based on their requirements, including gameplay mechanics, player controls, level design implementation, user interfaces and other required game systems.",
   },
   {
-    question: "Can you create a prototype before developing the complete game?",
+    question: "Do you develop games for Android and mobile devices?",
     answer:
-      "Yes. We can create a playable prototype to test the core gameplay concept before moving into full development. This helps validate the game idea and refine the experience at an early stage.",
+      "We can develop mobile-focused game experiences with touch controls, responsive game interfaces and performance considerations. Supported platforms and device requirements are determined during project planning.",
   },
   {
-    question: "What technologies do you use?",
+    question: "Can you turn my game idea into a playable prototype?",
     answer:
-      "Depending on the project, our development stack can include Unity, C#, Blender, Firebase, Android and iOS technologies.",
+      "A game prototype can help test the core gameplay, controls and main mechanics before full production. The prototype scope depends on your concept, desired features and project requirements.",
   },
   {
-    question: "Do you also handle game UI and UX?",
+    question: "Can you add custom gameplay mechanics and features?",
     answer:
-      "Yes. Game UI and UX can include menus, HUDs, buttons, navigation and other interfaces that are part of the player experience.",
+      "Yes. Depending on the project scope, custom gameplay features may include player movement, combat systems, enemy AI, scoring, health systems, level progression, game menus and sound effects.",
   },
   {
-    question: "Can you optimize my game for better performance?",
+    question: "Can you help publish my game?",
     answer:
-      "Yes. Game optimization can include performance improvements, asset optimization, bug fixing and platform-specific adjustments.",
+      "Game publishing requirements depend on the target platform and project scope. We can discuss build preparation, platform requirements and the technical steps needed to prepare a game for release.",
   },
   {
-    question: "How long does game development take?",
+    question: "Can you improve or update an existing game?",
     answer:
-      "The timeline depends on the game's scope, gameplay mechanics, features, art requirements, platforms and overall complexity.",
-  },
-  {
-    question: "How much does game development cost?",
-    answer:
-      "The cost depends on the game's scope, gameplay systems, art, animation, platforms and development time. We can discuss your requirements first and then define the appropriate project scope.",
-  },
-  {
-    question: "Do you provide support after the game is launched?",
-    answer:
-      "Yes. Post-launch support can include bug fixes, updates, optimization and additional improvements depending on the project requirements.",
+      "Existing games may need bug fixes, gameplay improvements, UI updates, performance optimization or new features. We can review the project's requirements and technical setup to determine the appropriate improvements.",
   },
 ];
 
+
 export default function GameDevelopmentPage() {
-    return (
+  return (
+    <>
+      <GameDevelopmentJsonLd />
       <main className="min-h-screen overflow-hidden bg-[#111827] text-white">
         {/* ================= NAVBAR ================= */}
         <Navbar />
@@ -386,78 +525,100 @@ export default function GameDevelopmentPage() {
               {/* GAME 01 */}
 
               <article className="group">
-                <div className="grid items-center gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:gap-16">
-                  {/* Visual */}
-                  <div className="relative overflow-hidden rounded-[32px] border border-white/[0.08] bg-[#0B1020]">
-                    {/* Video */}
-                    <div className="relative aspect-[16/9] overflow-hidden">
-                      <video
-                        src="/videos/gameplay.mp4"
-                        poster="/logo-dark.png"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        preload="metadata"
-                        className="h-full w-full object-cover transition duration-1000 group-hover:scale-[1.035]"
-                      />
+                <div className="grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+                  {/* PORTRAIT GAMEPLAY VIDEO */}
+                  <div className="relative mx-auto w-full max-w-[320px]">
+                    <div className="absolute -inset-5 rounded-[40px] bg-purple-600/10 blur-3xl" />
 
-                      {/* Overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#0B1020]/80 via-transparent to-transparent" />
+                    <div className="relative overflow-hidden rounded-[32px] border border-white/[0.08] bg-[#0B1020] p-2.5 shadow-2xl">
+                      <div className="relative aspect-[9/16] overflow-hidden rounded-[24px] bg-black">
+                        <video
+                          src="/videos/brick-breaker-game-play.mp4"
+                          poster="/image/brick-breaker/screenshot-1.webp"
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                          controls
+                          preload="metadata"
+                          className="absolute inset-0 h-full w-full object-contain transition duration-700 group-hover:scale-[1.02]"
+                        />
 
-                      {/* Status */}
-                      <div className="absolute left-5 top-5">
-                        <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#111827]/75 px-3.5 py-2 backdrop-blur-xl">
-                          <span className="h-1.5 w-1.5 rounded-full bg-[#FACC15] shadow-[0_0_10px_#FACC15]" />
+                        {/* GRADIENT OVERLAY */}
+                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0B1020]/50 via-transparent to-[#0B1020]/20" />
 
-                          <span className="text-[9px] font-medium uppercase tracking-[0.18em] text-white/75">
-                            In Development
-                          </span>
+                        {/* STATUS */}
+                        <div className="pointer-events-none absolute left-4 top-4">
+                          <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#111827]/75 px-3 py-2 backdrop-blur-xl">
+                            <span className="h-1.5 w-1.5 rounded-full bg-[#FACC15]" />
+                            <span className="text-[9px] font-medium uppercase tracking-[0.16em] text-white/80">
+                              Mobile Gameplay
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
+
+                    {/* VIDEO CAPTION */}
+                    <p className="mt-4 text-center text-xs tracking-wide text-white/35">
+                      BRICK BREAKER · UNITY 2D
+                    </p>
                   </div>
 
-                  {/* Information */}
+                  {/* GAME INFORMATION */}
                   <div className="lg:py-8">
-                    {/* Category */}
+                    {/* CATEGORY */}
                     <p className="text-[10px] font-medium uppercase tracking-[0.22em] text-[#A78BFA]">
-                      Arcade • Casual
+                      Arcade · Casual · Mobile
                     </p>
 
-                    {/* Title */}
-                    <h3 className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl">
-                      Untitled
+                    {/* TITLE */}
+                    <h3 className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
+                      BRICK
+                      <span className="block bg-gradient-to-r from-[#A78BFA] via-[#7C3AED] to-[#FACC15] bg-clip-text text-transparent">
+                        BREAKER
+                      </span>
                     </h3>
 
-                    {/* Description */}
-                    <p className="mt-5 text-sm leading-7 text-white/45 sm:text-base">
-                      Our first mobile game is currently in development. More
-                      details, gameplay and the official title will be revealed
-                      soon.
+                    {/* DESCRIPTION */}
+                    <p className="mt-5 max-w-xl text-sm leading-7 text-white/55 sm:text-base">
+                      A classic brick-breaking arcade game developed by Tiny
+                      Dream Games. Control the paddle, keep the ball in play and
+                      break through challenging brick formations in a responsive
+                      2D mobile gaming experience powered by Unity.
                     </p>
 
-                    {/* Details */}
-                    <div className="mt-8 space-y-3 border-y border-white/[0.08] py-5">
-                      <div className="flex items-center justify-between">
+                    {/* GAME DETAILS */}
+                    <div className="mt-8 space-y-4 border-y border-white/[0.08] py-5">
+                      <div className="flex items-center justify-between gap-4">
                         <span className="text-xs text-white/35">Platform</span>
-
-                        <span className="text-xs text-white/70">Android</span>
+                        <span className="text-xs text-white/75">Mobile</span>
                       </div>
 
-                      <div className="flex items-center justify-between">
-                        <span className="text-xs text-white/35">Status</span>
+                      <div className="flex items-center justify-between gap-4">
+                        <span className="text-xs text-white/35">Engine</span>
+                        <span className="text-xs text-white/75">Unity 2D</span>
+                      </div>
 
-                        <span className="text-xs text-[#A78BFA]">
-                          In Development
+                      <div className="flex items-center justify-between gap-4">
+                        <span className="text-xs text-white/35">Genre</span>
+                        <span className="text-xs text-white/75">
+                          Arcade · Casual
                         </span>
                       </div>
 
-                      <div className="flex items-center justify-between">
-                        <span className="text-xs text-white/35">Genre</span>
+                      <div className="flex items-center justify-between gap-4">
+                        <span className="text-xs text-white/35">Developer</span>
+                        <span className="text-xs text-white/75">
+                          Tiny Dream Games
+                        </span>
+                      </div>
 
-                        <span className="text-xs text-white/70">
-                          Arcade • Casual
+                      <div className="flex items-center justify-between gap-4">
+                        <span className="text-xs text-white/35">Status</span>
+                        <span className="inline-flex items-center gap-2 text-xs text-[#A78BFA]">
+                          <span className="h-1.5 w-1.5 rounded-full bg-[#A78BFA]" />
+                          In Development
                         </span>
                       </div>
                     </div>
@@ -465,12 +626,12 @@ export default function GameDevelopmentPage() {
                     {/* CTA */}
                     <div className="mt-7">
                       <a
-                        href="#"
+                        href="/games/brick-breaker"
                         className="group/link inline-flex items-center gap-3 text-sm font-medium text-white transition"
                       >
                         <span>Explore Game</span>
 
-                        <span className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/50 transition duration-300 group-hover/link:border-[#A78BFA]/30 group-hover/link:bg-[#7C3AED]/10 group-hover/link:text-[#A78BFA]">
+                        <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-white/50 transition duration-300 group-hover/link:border-[#A78BFA]/30 group-hover/link:bg-[#7C3AED]/10 group-hover/link:text-[#A78BFA]">
                           →
                         </span>
                       </a>
@@ -480,7 +641,6 @@ export default function GameDevelopmentPage() {
               </article>
 
               {/* ================= FUTURE GAMES ================= */}
-
               <div className="mt-24 border-t border-white/[0.08] pt-16">
                 <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
                   <div>
@@ -659,5 +819,6 @@ export default function GameDevelopmentPage() {
         {/* ================= PREMIUM FOOTER ================= */}
         <Footer />
       </main>
-    );
+    </>
+  );
 }

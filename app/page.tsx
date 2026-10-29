@@ -6,64 +6,54 @@ import Reviews from "@/components/reviews";
 import ProjectEnquiryForm from "@/components/project-enquiry-form";
 const faqs = [
   {
-    question: "What kind of games can you develop?",
+    question: "What services does Tiny Dream Games offer?",
     answer:
-      "We develop custom 2D and 3D games for mobile and digital platforms. Projects can range from casual and action games to adventure, endless runner and other custom gameplay concepts.",
+      "Tiny Dream Games offers web development, mobile app development, and game development services. We build custom business websites, web applications, Android apps, and engaging 2D and 3D games based on your project requirements.",
   },
   {
-    question: "Can you turn my game idea into a playable product?",
+    question: "Do you provide custom website development services?",
     answer:
-      "Yes. We can work with an existing game concept or help shape an early idea into a playable product. We can define the core gameplay, mechanics, features and development requirements based on your vision.",
+      "Yes. We provide custom website development services for businesses, startups, and creators. Our services include responsive business websites, modern Next.js websites, e-commerce solutions, website maintenance, and performance optimization.",
   },
   {
-    question: "Do you develop both 2D and 3D games?",
+    question: "Do you develop mobile apps for Android and iOS?",
     answer:
-      "Yes. We work on both 2D and 3D game projects. The development approach, assets, gameplay systems and technology are planned according to the requirements of each game.",
+      "We develop custom mobile applications based on project requirements, including Android apps and mobile-focused digital products. We discuss your goals, required features, target audience, and platform before recommending an appropriate development approach.",
   },
   {
-    question: "Do you develop games for mobile?",
+    question: "Do you offer Unity game development services?",
     answer:
-      "Yes. Mobile game development is one of our core areas. We focus on responsive touch controls, smooth gameplay and performance considerations for mobile devices.",
+      "Yes. Our game development services include Unity game development, gameplay mechanics, 2D and 3D game development, and mobile game development. We can help plan and build game experiences according to your concept, features, and target platform.",
   },
   {
-    question: "What does your game development process look like?",
+    question: "Can you turn my idea into a website, app, or game?",
     answer:
-      "Our process typically starts with understanding the idea, followed by planning the gameplay and features, building the game, testing and polishing the experience, and finally preparing the product for launch.",
+      "Yes. We can discuss your idea, identify the essential features, and plan a suitable development approach. Whether you need a business website, a custom mobile application, or a playable game prototype, the project scope is tailored to your goals.",
   },
   {
-    question: "Can you create a prototype before developing the complete game?",
+    question: "How much do website, app, and game development services cost?",
     answer:
-      "Yes. We can create a playable prototype to test the core gameplay concept before moving into full development. This helps validate the game idea and refine the experience at an early stage.",
+      "The cost of website development, mobile app development, or game development depends on the project's complexity, features, design, technology, and timeline. Contact Tiny Dream Games with your requirements to discuss the scope and an appropriate project estimate.",
   },
   {
-    question: "What technologies do you use?",
+    question: "How long does it take to develop a website, app, or game?",
     answer:
-      "Depending on the project, our development stack can include Unity, C#, Blender, Firebase, Android and iOS technologies.",
+      "The development timeline depends on the project scope, required features, design complexity, integrations, and testing requirements. We review your goals and requirements before establishing a realistic timeline for your website, application, or game.",
   },
   {
-    question: "Do you also handle game UI and UX?",
+    question: "Do you provide website maintenance and SEO services?",
     answer:
-      "Yes. Game UI and UX can include menus, HUDs, buttons, navigation and other interfaces that are part of the player experience.",
+      "We can help with website maintenance, technical improvements, performance optimization, and SEO-related implementation. SEO work may include metadata, heading structure, internal linking, and technical checks. Search rankings depend on several factors and cannot be guaranteed.",
   },
   {
-    question: "Can you optimize my game for better performance?",
+    question: "Can you improve an existing website, app, or game?",
     answer:
-      "Yes. Game optimization can include performance improvements, asset optimization, bug fixing and platform-specific adjustments.",
+      "Yes. Depending on the project and its existing technology, we can help with bug fixing, feature improvements, responsive design, performance optimization, integrations, and other development requirements. We first review the current product and identify suitable improvements.",
   },
   {
-    question: "How long does game development take?",
+    question: "How can I start a project with Tiny Dream Games?",
     answer:
-      "The timeline depends on the game's scope, gameplay mechanics, features, art requirements, platforms and overall complexity.",
-  },
-  {
-    question: "How much does game development cost?",
-    answer:
-      "The cost depends on the game's scope, gameplay systems, art, animation, platforms and development time. We can discuss your requirements first and then define the appropriate project scope.",
-  },
-  {
-    question: "Do you provide support after the game is launched?",
-    answer:
-      "Yes. Post-launch support can include bug fixes, updates, optimization and additional improvements depending on the project requirements.",
+      "To start a project, contact Tiny Dream Games through our website and share your idea, preferred platform, required features, and expected timeline. We can discuss your requirements, clarify the project scope, and determine the next steps for your website, mobile app, or game development project.",
   },
 ];
 export default function Home() {
@@ -114,10 +104,10 @@ export default function Home() {
 
             {/* Heading */}
             <h1 className="text-5xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
-              Small Team.
+              Web, App &amp;
               <br />
               <span className="bg-gradient-to-r from-[#A78BFA] via-[#C084FC] to-[#FACC15] bg-clip-text text-transparent">
-                Big Dreams.
+                Game Development
               </span>
             </h1>
 
