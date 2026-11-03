@@ -74,7 +74,6 @@ function ContactPageJsonLd() {
   );
 }
 
-
 export default function ContactPage() {
   return (
     <>
@@ -157,7 +156,7 @@ export default function ContactPage() {
                   </p>
 
                   <a
-                    href="https://wa.me/918267093024"
+                    href="https://wa.me/919275293024"
                     className="mt-2 inline-block text-sm text-white/75 transition hover:text-[#A78BFA]"
                   >
                     Let&apos;s chat on WhatsApp →
@@ -191,7 +190,7 @@ export default function ContactPage() {
             </p>
 
             <a
-              href="https://wa.me/918267093024"
+              href="https://wa.me/919275293024"
               className="mt-5 inline-flex items-center gap-3 text-lg font-medium text-white transition hover:text-[#A78BFA]"
             >
               Talk to us on WhatsApp

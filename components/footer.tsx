@@ -275,7 +275,7 @@ export default function Navbar() {
               </a>
 
               {/* PHONE */}
-              <a href="tel:+918267093024" className="group flex gap-4">
+              <a href="tel:+919275293024" className="group flex gap-4">
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#FACC15]/20 bg-[#FACC15]/10 text-[#FACC15] transition group-hover:border-[#FACC15]/40">
                   <svg
                     className="h-5 w-5"
@@ -296,7 +296,7 @@ export default function Navbar() {
                   </span>
 
                   <span className="mt-1 block text-sm text-white/40 transition group-hover:text-white/60">
-                    +91 8267093024
+                    +91 9275293024
                   </span>
                 </span>
               </a>
@@ -364,7 +364,7 @@ export default function Navbar() {
       </div>
       {/* ================= FLOATING WHATSAPP ================= */}
       <a
-        href="https://wa.me/918267093024"
+        href="https://wa.me/919275293024"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with Tiny Dream Games on WhatsApp"

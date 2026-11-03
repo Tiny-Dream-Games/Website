@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import FAQ from "@/components/FAQ";
 import Reviews from "@/components/reviews";
-
+import GamePricing from "@/components/game-pricing";
 
 export const metadata: Metadata = {
   title: "Game Development Services",
@@ -482,7 +482,7 @@ export default function GameDevelopmentPage() {
             </div>
           </div>
         </section>
-
+        <GamePricing />
         {/* WORKING PRODUCTS */}
         <section
           id="games"

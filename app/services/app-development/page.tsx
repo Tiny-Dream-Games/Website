@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import FAQ from "@/components/FAQ";
 import Reviews from "@/components/reviews";
-
+import AppPricing from "@/components/app-pricing";
 
 export const metadata: Metadata = {
   title: "App Development Services",
@@ -562,75 +562,7 @@ export default function AppDevelopmentPage() {
           </div>
         </section>
 
-        {/* WORKING PRODUCTS */}
-        <section id="projects" className="mx-auto max-w-7xl px-6 py-18 lg:px-8">
-          <div className="flex flex-col justify-between gap-7 md:flex-row md:items-end">
-            <div className="max-w-2xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#A78BFA]">
-                Selected Work
-              </p>
-
-              <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-                Products designed for real users.
-              </h2>
-
-              <p className="mt-5 text-lg leading-8 text-gray-400">
-                Explore selected application projects and digital products.
-              </p>
-            </div>
-
-            {/* <Link
-            href="/#portfolio"
-            className="text-sm font-semibold text-[#A78BFA] transition hover:text-white"
-          >
-            View all projects →
-          </Link> */}
-          </div>
-
-          <div className="mt-14 grid gap-7 lg:grid-cols-3">
-            {projects.map((project, index) => (
-              <article
-                key={index}
-                className="group overflow-hidden rounded-3xl border border-white/10 bg-[#151D2E] transition duration-300 hover:-translate-y-1 hover:border-purple-400/30"
-              >
-                <div className="relative aspect-[4/3] overflow-hidden bg-[#0B1020]">
-                  <img
-                    src={project.image}
-                    alt={`${project.title} app project`}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                  />
-
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B1020]/70 via-transparent to-transparent" />
-
-                  <span className="absolute left-4 top-4 rounded-full border border-white/10 bg-black/50 px-3 py-1.5 text-xs backdrop-blur-md">
-                    {project.status}
-                  </span>
-                </div>
-
-                <div className="p-7">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-[#A78BFA]">
-                    {project.category}
-                  </p>
-
-                  <h3 className="mt-3 text-2xl font-semibold">
-                    {project.title}
-                  </h3>
-
-                  <p className="mt-3 leading-7 text-gray-400">
-                    {project.description}
-                  </p>
-
-                  {/* <button className="mt-6 inline-flex items-center text-sm font-semibold text-white transition group-hover:text-[#A78BFA]">
-                  View Project
-                  <span className="ml-2 transition-transform group-hover:translate-x-1">
-                    →
-                  </span>
-                </button> */}
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
+        <AppPricing />
 
         {/* PROCESS */}
         <section className="border-y border-white/10 bg-[#0D1422]">
