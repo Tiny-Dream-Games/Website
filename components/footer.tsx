@@ -245,7 +245,7 @@ export default function Navbar() {
             <div className="mt-7 space-y-5">
               {/* EMAIL */}
               <a
-                href="mailto:tinydreamgamesstudio@gmail.com"
+                href="mailto:info@tinydreamgames.com"
                 className="group flex gap-4"
               >
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#7C3AED]/25 bg-[#7C3AED]/10 text-[#A78BFA] transition group-hover:border-[#A78BFA]/40 group-hover:bg-[#7C3AED]/15">
@@ -269,7 +269,7 @@ export default function Navbar() {
                   </span>
 
                   <span className="mt-1 block text-sm text-white/40 transition group-hover:text-white/60">
-                    tinydreamgamesstudio@gmail.com
+                    info@tinydreamgames.com
                   </span>
                 </span>
               </a>

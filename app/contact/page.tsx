@@ -143,10 +143,10 @@ export default function ContactPage() {
                   </p>
 
                   <a
-                    href="mailto:tinydreamgamesstudio@gmail.com"
+                    href="mailto:info@tinydreamgames.com"
                     className="mt-2 inline-block text-sm text-white/75 transition hover:text-[#A78BFA]"
                   >
-                    tinydreamgamesstudio@gmail.com
+                    info@tinydreamgames.com
                   </a>
                 </div>
 

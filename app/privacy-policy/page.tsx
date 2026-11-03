@@ -221,10 +221,10 @@ export default function PrivacyPolicyPage() {
             </p>
 
             <a
-              href="mailto:tinydreamgamesstudio@gmail.com"
+              href="mailto:info@tinydreamgames.com"
               className="mt-5 inline-block font-medium text-[#A78BFA] transition hover:text-white"
             >
-              tinydreamgamesstudio@gmail.com
+              info@tinydreamgames.com
             </a>
           </section>
         </div>
