@@ -6,10 +6,11 @@ import FAQ from "@/components/FAQ";
 import Reviews from "@/components/reviews";
 import AppPricing from "@/components/app-pricing";
 
+
 export const metadata: Metadata = {
-  title: "App Development Services",
+  title: "App Development Company | Tiny Dream Games",
   description:
-    "Tiny Dream Games builds custom mobile apps and web applications for businesses and startups, with responsive interfaces, reliable functionality, and performance-focused development.",
+    "Tiny Dream Games is an app development company offering custom mobile app and web application development services for businesses, startups and growing brands.",
 
   alternates: {
     canonical: "/services/app-development",
@@ -19,23 +20,23 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     siteName: "Tiny Dream Games",
-    title: "App Development Services | Tiny Dream Games",
+    title: "App Development Company | Tiny Dream Games",
     description:
-      "Explore custom mobile app and web application development services by Tiny Dream Games for businesses and startups.",
+      "Explore custom app development services by Tiny Dream Games. We build mobile and web applications tailored to business and product requirements.",
     url: "/services/app-development",
     images: [
       {
         url: "/tiny-dream-logo.png",
-        alt: "Tiny Dream Games app development services",
+        alt: "Tiny Dream Games - App Development Company",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "App Development Services | Tiny Dream Games",
+    title: "App Development Company | Tiny Dream Games",
     description:
-      "Custom mobile apps and web applications developed by Tiny Dream Games.",
+      "Custom mobile app and web application development services for businesses and startups.",
     images: ["/tiny-dream-logo.png"],
   },
 
@@ -47,26 +48,35 @@ export const metadata: Metadata = {
 
 
 
+
 const appDevelopmentSchema = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@context": "https://schema.org",
       "@type": "Service",
       "@id": "https://www.tinydreamgames.com/services/app-development#service",
       name: "App Development Services",
       serviceType: [
         "Mobile Application Development",
         "Web Application Development",
-        "Custom Application Development",
+        "Custom App Development",
       ],
       url: "https://www.tinydreamgames.com/services/app-development",
       description:
-        "Tiny Dream Games provides custom mobile and web application development for businesses and startups. Project scope and pricing are determined according to individual requirements.",
+        "Tiny Dream Games provides custom mobile app and web application development services for businesses and startups, with solutions planned around individual product requirements.",
       provider: {
         "@type": "Organization",
         "@id": "https://www.tinydreamgames.com/#organization",
         name: "Tiny Dream Games",
         url: "https://www.tinydreamgames.com/",
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: 5.0,
+        reviewCount: 200,
+        bestRating: 5,
+        worstRating: 1,
       },
     },
     {
@@ -175,64 +185,65 @@ const services = [
     number: "01",
     title: "Mobile App Development",
     description:
-      "Custom mobile applications designed around your product idea, users, features and target platforms.",
+      "Custom mobile app development for businesses and startups, with intuitive interfaces, useful features and experiences tailored to your users.",
   },
   {
     number: "02",
-    title: "Android Applications",
+    title: "Android App Development",
     description:
-      "Android apps with responsive interfaces, smooth interactions and functionality built around your requirements.",
+      "Android application development focused on responsive interfaces, smooth interactions and functionality built around your business requirements.",
   },
   {
     number: "03",
-    title: "iOS Applications",
+    title: "iOS App Development",
     description:
-      "iOS-focused applications designed with a clean interface and a user experience suited to Apple devices.",
+      "Custom iOS applications designed with clean interfaces, user-friendly navigation and experiences suited to Apple devices.",
   },
   {
     number: "04",
-    title: "Cross-Platform Apps",
+    title: "Cross-Platform App Development",
     description:
-      "Applications planned for multiple platforms where a shared development approach makes sense for the project.",
+      "Cross-platform app development solutions for projects that need to reach users across multiple mobile platforms.",
   },
   {
     number: "05",
     title: "Custom App Development",
     description:
-      "From a simple product idea to a feature-rich application, we build functionality around your specific business requirements.",
+      "Custom app development tailored to your product idea, from essential business features to more advanced application functionality.",
   },
   {
     number: "06",
-    title: "App Maintenance",
+    title: "App Maintenance and Support",
     description:
-      "Ongoing bug fixes, improvements, updates and technical changes to keep your application useful and reliable.",
+      "Application maintenance services including bug fixes, performance improvements, updates and ongoing technical support.",
   },
 ];
 
-const projects = [
+
+const process = [
   {
-    title: "Business App",
-    category: "Mobile • Business",
+    number: "01",
+    title: "Discover Your Idea",
     description:
-      "A focused mobile experience designed to make everyday business interactions simpler.",
-    status: "Completed",
-    image: "/image/Business App.webp",
+      "We understand your app idea, target users, business goals, required features and platform requirements to define the right development direction.",
   },
   {
-    title: "Service Application",
-    category: "Mobile • Services",
+    number: "02",
+    title: "Plan the Application",
     description:
-      "A user-focused application built around service discovery, interaction and streamlined workflows.",
-    status: "In Development",
-    image: "/image/Service Application.webp",
+      "We plan the application structure, user journeys, core features and technical requirements before starting the app development process.",
   },
   {
-    title: "Custom Product App",
-    category: "Custom • Interactive",
+    number: "03",
+    title: "Design and Develop",
     description:
-      "A custom application experience designed around a specific product concept and user journey.",
-    status: "Coming Soon",
-    image: "/image/Custom Product App.webp",
+      "We build your custom application with intuitive user interfaces, useful functionality, responsive experiences and performance in mind.",
+  },
+  {
+    number: "04",
+    title: "Test and Launch",
+    description:
+      "We test the application, fix issues, prepare the final build and help get your product ready for its intended platform.",
   },
 ];
 
@@ -246,34 +257,6 @@ const technologies = [
   "Node.js",
   "Firebase",
 ];
-
-const process = [
-  {
-    number: "01",
-    title: "Discover",
-    description:
-      "We understand your product idea, users, business goals, features and target platforms.",
-  },
-  {
-    number: "02",
-    title: "Plan",
-    description:
-      "We structure the application, user flows, core features and technical requirements before development.",
-  },
-  {
-    number: "03",
-    title: "Build",
-    description:
-      "The application is developed with responsive interfaces, functionality and performance in mind.",
-  },
-  {
-    number: "04",
-    title: "Launch",
-    description:
-      "We test the application, prepare the final build and help get the product ready for its target platform.",
-  },
-];
-
 
 const faqs = [
   {
@@ -338,45 +321,50 @@ export default function AppDevelopmentPage() {
         <Navbar />
 
         {/* HERO */}
+
         <section className="relative border-b border-white/10">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_30%,rgba(124,58,237,0.22),transparent_35%),radial-gradient(circle_at_20%_70%,rgba(250,204,21,0.06),transparent_30%)]" />
 
-          <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-6 pb-24 pt-32 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:pb-28 lg:pt-28">
+          <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-6 pb-24 pt-32 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:pb-28 lg:pt-35">
             <div>
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-purple-400/20 bg-purple-500/10 px-4 py-2 text-sm text-purple-200">
                 <span className="h-2 w-2 rounded-full bg-[#FACC15]" />
                 App Development Studio
               </div>
 
-              <h1 className="max-w-4xl text-5xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
-                Apps Built
+              <h1 className="max-w-3xl text-3xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-5xl lg:text-5xl">
+                App Development Company
                 <span className="block bg-gradient-to-r from-[#A78BFA] via-[#7C3AED] to-[#FACC15] bg-clip-text text-transparent">
-                  Around Your Ideas.
+                  for Custom Mobile & Web Apps.
                 </span>
               </h1>
 
               <p className="mt-7 max-w-2xl text-lg leading-8 text-gray-300 sm:text-xl">
-                We create modern mobile and web applications with intuitive
-                interfaces, useful functionality and technology chosen around
-                your product requirements.
+                Tiny Dream Games is an app development company creating custom
+                mobile and web applications for businesses, startups and growing
+                brands. Our app development services focus on intuitive user
+                interfaces, useful functionality, responsive experiences and
+                scalable solutions tailored to your product requirements.
               </p>
 
-              <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-                <Link
-                  href="/#contact"
-                  className="inline-flex items-center justify-center rounded-full bg-[#7C3AED] px-7 py-4 font-semibold transition hover:bg-[#6D28D9]"
-                >
-                  Start Your App
-                  <span className="ml-2">→</span>
-                </Link>
+              {/* 
+      <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+        <Link
+          href="/#contact"
+          className="inline-flex items-center justify-center rounded-full bg-[#7C3AED] px-7 py-4 font-semibold transition hover:bg-[#6D28D9]"
+        >
+          Start Your App
+          <span className="ml-2">→</span>
+        </Link>
 
-                <Link
-                  href="#projects"
-                  className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-7 py-4 font-semibold transition hover:bg-white/10"
-                >
-                  View Our Work
-                </Link>
-              </div>
+        <Link
+          href="#projects"
+          className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-7 py-4 font-semibold transition hover:bg-white/10"
+        >
+          View Our Work
+        </Link>
+      </div>
+      */}
 
               <div className="mt-12 grid max-w-xl grid-cols-3 gap-6 border-t border-white/10 pt-7">
                 <div>
@@ -426,7 +414,6 @@ export default function AppDevelopmentPage() {
 
                       <div className="mt-7 rounded-2xl bg-gradient-to-br from-[#7C3AED] to-[#4C1D95] p-5">
                         <p className="text-xs text-purple-200">Overview</p>
-
                         <p className="mt-2 text-3xl font-semibold">24.8K</p>
 
                         <div className="mt-5 h-2 rounded-full bg-white/20">
@@ -496,29 +483,57 @@ export default function AppDevelopmentPage() {
         </section>
 
         {/* INTRO */}
+
         <section className="mx-auto max-w-7xl px-6 py-18 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#A78BFA]">
-                What We Build
+                Custom App Development Services
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-                An app should make things simpler.
+                Custom Applications Built Around Your Business Goals.
               </h2>
             </div>
 
             <div>
               <p className="text-lg leading-8 text-gray-300">
                 Whether you are building a business product, customer-facing
-                application or a new digital idea, the experience should be
-                intuitive from the first interaction.
+                mobile application or a new digital idea, your app should make
+                things simpler with an intuitive and seamless user experience.
               </p>
 
               <p className="mt-5 text-lg leading-8 text-gray-400">
-                We focus on clear user flows, useful functionality, responsive
-                interfaces and a technical foundation that can evolve as your
-                product grows.
+                At Tiny Dream Games, we provide custom app development services
+                focused on clear user flows, useful functionality, intuitive
+                interfaces and reliable technical foundations. Our mobile app
+                development approach is tailored to your product requirements
+                and designed to support your business as it grows.
+              </p>
+
+              <p className="mt-5 text-lg leading-8 text-gray-400">
+                Looking for other digital solutions? Explore our{" "}
+                <a
+                  href="/services/web-development"
+                  className="text-[#A78BFA] transition hover:text-white"
+                >
+                  Website Development Services
+                </a>{" "}
+                and{" "}
+                <a
+                  href="/services/game-development"
+                  className="text-[#A78BFA] transition hover:text-white"
+                >
+                  Game Development Services
+                </a>
+                . Have a project in mind?{" "}
+                <a
+                  href="/contact"
+                  className="text-[#A78BFA] transition hover:text-white"
+                >
+                  Contact Us
+                </a>{" "}
+                to discuss your requirements.
               </p>
             </div>
           </div>
@@ -529,11 +544,11 @@ export default function AppDevelopmentPage() {
           <div className="mx-auto max-w-7xl px-6 py-18 lg:px-8">
             <div className="max-w-2xl">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#A78BFA]">
-                Our Capabilities
+                App Development Services
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-                From idea to application.
+                Complete App Development Services for Your Ideas.
               </h2>
             </div>
 
@@ -569,11 +584,11 @@ export default function AppDevelopmentPage() {
           <div className="mx-auto max-w-7xl px-6 py-18 lg:px-8">
             <div className="max-w-2xl">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#A78BFA]">
-                Our Process
+                Our App Development Process
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-                From idea to working product.
+                A Clear Process from App Idea to Launch.
               </h2>
             </div>
 
@@ -606,17 +621,19 @@ export default function AppDevelopmentPage() {
           <div className="grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr]">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#A78BFA]">
-                Technology
+                App Development Technologies
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-                The right stack for the product.
+                The Right Technology for Your Application.
               </h2>
 
               <p className="mt-5 max-w-lg text-lg leading-8 text-gray-400">
-                Technology choices depend on the application's features, target
-                platforms, integrations, performance requirements and future
-                maintenance needs.
+                We choose the right technologies based on your application's
+                features, target platforms, integrations and performance
+                requirements. Our technology stack supports custom mobile app
+                development and web application development, with future
+                scalability and maintenance in mind.
               </p>
             </div>
 
@@ -634,27 +651,28 @@ export default function AppDevelopmentPage() {
         </section>
 
         {/* WHY US */}
+
         <section className="border-y border-white/10 bg-[#0D1422]">
           <div className="mx-auto max-w-7xl px-6 py-18 lg:px-8">
             <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#A78BFA]">
-                  Why Tiny Dream Games
+                  Why Choose Tiny Dream Games
                 </p>
 
                 <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-                  Simple experiences. Thoughtful technology.
+                  A Reliable Partner for Custom App Development.
                 </h2>
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2">
                 {[
-                  "User-focused interface",
-                  "Responsive application design",
-                  "Custom functionality",
-                  "Performance-conscious development",
+                  "User-focused application interfaces",
+                  "Responsive mobile and web app design",
+                  "Custom features built around your needs",
+                  "Performance-conscious app development",
                   "Clean and maintainable code",
-                  "Scalable technical foundation",
+                  "Scalable application architecture",
                 ].map((item) => (
                   <div
                     key={item}

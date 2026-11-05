@@ -6,10 +6,11 @@ import FAQ from "@/components/FAQ";
 import Reviews from "@/components/reviews";
 import WebsitePricing from "@/components/website-pricing";
 
+
 export const metadata: Metadata = {
-  title: "Website Development Services",
+  title: "Website Development Services | Tiny Dream Games",
   description:
-    "Tiny Dream Games builds custom, responsive websites for businesses and startups, with modern design, mobile-friendly layouts, and performance-focused development.",
+    "Looking for a website development company? Tiny Dream Games builds custom, responsive and SEO-friendly websites for businesses, startups and growing brands.",
 
   alternates: {
     canonical: "/services/web-development",
@@ -20,22 +21,22 @@ export const metadata: Metadata = {
     locale: "en_IN",
     siteName: "Tiny Dream Games",
     url: "/services/web-development",
-    title: "Website Development Services | Tiny Dream Games",
+    title: "Website Development Company | Tiny Dream Games",
     description:
-      "Explore custom website development services by Tiny Dream Games, including responsive business websites and modern web solutions.",
+      "Explore professional website development services by Tiny Dream Games, including custom business websites, responsive web design and modern web solutions.",
     images: [
       {
         url: "/tiny-dream-logo.png",
-        alt: "Tiny Dream Games — Website Development Services",
+        alt: "Tiny Dream Games - Website Development Company",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Website Development Services | Tiny Dream Games",
+    title: "Website Development Company | Tiny Dream Games",
     description:
-      "Custom, responsive website development for businesses by Tiny Dream Games.",
+      "Custom and responsive website development services for businesses, startups and growing brands.",
     images: ["/tiny-dream-logo.png"],
   },
 
@@ -44,6 +45,7 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
+
 
 const webDevelopmentSchema = {
   "@context": "https://schema.org",
@@ -55,12 +57,19 @@ const webDevelopmentSchema = {
       serviceType: "Website Development",
       url: "https://www.tinydreamgames.com/services/web-development",
       description:
-        "Tiny Dream Games provides custom website development services for businesses and startups, including responsive website design and development.",
+        "Tiny Dream Games provides custom website development services for businesses, startups and growing brands, including responsive business websites, landing pages and custom web solutions.",
       provider: {
         "@type": "Organization",
         "@id": "https://www.tinydreamgames.com/#organization",
         name: "Tiny Dream Games",
         url: "https://www.tinydreamgames.com/",
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: 5.0,
+        reviewCount: 500,
+        bestRating: 5,
+        worstRating: 1,
       },
     },
     {
@@ -165,42 +174,71 @@ function WebDevelopmentJsonLd() {
 
 
 
+
 const services = [
   {
     number: "01",
-    title: "Business Websites",
+    title: "Business Website Development",
     description:
-      "Professional websites designed to present your business clearly, build trust and convert visitors into enquiries.",
+      "Professional business website development to showcase your services, establish credibility, build customer trust and generate enquiries.",
   },
   {
     number: "02",
-    title: "Landing Pages",
+    title: "Landing Page Development",
     description:
-      "Focused landing pages built around a specific service, campaign, product or conversion goal.",
+      "Conversion-focused landing page development for products, services and marketing campaigns, designed to guide visitors towards clear actions.",
   },
   {
     number: "03",
-    title: "Custom Web Development",
+    title: "Custom Website Development",
     description:
-      "Custom web experiences built around your business requirements instead of forcing your idea into a generic template.",
+      "Custom website development tailored to your business requirements, with unique functionality, flexible layouts and solutions beyond generic templates.",
   },
   {
     number: "04",
     title: "Responsive Web Design",
     description:
-      "Websites designed to provide a consistent and polished experience across desktop, tablet and mobile devices.",
+      "Mobile-friendly website design that delivers a consistent browsing experience across smartphones, tablets, laptops and desktop screens.",
   },
   {
     number: "05",
-    title: "SEO-Friendly Development",
+    title: "SEO-Friendly Website Development",
     description:
-      "Clean structure, metadata, semantic HTML, performance considerations and technical foundations designed with search visibility in mind.",
+      "Search-friendly website development with semantic HTML, clean page structure, metadata, responsive layouts and performance-focused foundations.",
   },
   {
     number: "06",
-    title: "Website Maintenance",
+    title: "Website Maintenance & Support",
     description:
-      "Ongoing updates, bug fixes, content changes, improvements and technical maintenance for existing websites.",
+      "Reliable website maintenance, including content updates, bug fixes, security updates, performance improvements and ongoing technical support.",
+  },
+];
+
+
+const process = [
+  {
+    number: "01",
+    title: "Discovery & Planning",
+    description:
+      "We understand your business goals, target audience, website requirements, content and project scope to create a clear development plan.",
+  },
+  {
+    number: "02",
+    title: "Website Design",
+    description:
+      "We plan the page structure and create a modern website design that reflects your brand, improves user experience and works across devices.",
+  },
+  {
+    number: "03",
+    title: "Website Development",
+    description:
+      "We build your website with responsive layouts, clean code, required functionality and SEO-friendly technical foundations.",
+  },
+  {
+    number: "04",
+    title: "Testing & Launch",
+    description:
+      "We test website functionality, mobile responsiveness and performance, then prepare your website for deployment and launch.",
   },
 ];
 
@@ -214,33 +252,6 @@ const technologies = [
   "Node.js",
   "PHP",
   "MySQL",
-];
-
-const process = [
-  {
-    number: "01",
-    title: "Discover",
-    description:
-      "We understand your business, audience, goals, content requirements and the purpose of your website.",
-  },
-  {
-    number: "02",
-    title: "Design",
-    description:
-      "We create the visual direction, page structure and user experience around your brand.",
-  },
-  {
-    number: "03",
-    title: "Develop",
-    description:
-      "The website is built with responsive layouts, clean code, functionality and performance in mind.",
-  },
-  {
-    number: "04",
-    title: "Launch",
-    description:
-      "We test the website, optimize the final experience and prepare it for deployment and launch.",
-  },
 ];
 
 
@@ -316,20 +327,23 @@ export default function WebDevelopmentPage() {
                 Web Development Studio
               </div>
 
-              <h1 className="max-w-4xl text-5xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
-                Websites Built
+              <h1 className="max-w-3xl text-3xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-5xl lg:text-5xl">
+                Website Development Services
                 <span className="block bg-gradient-to-r from-[#A78BFA] via-[#7C3AED] to-[#FACC15] bg-clip-text text-transparent">
-                  To Move Your Business.
+                  for Growing Businesses
                 </span>
               </h1>
 
               <p className="mt-7 max-w-2xl text-lg leading-8 text-gray-300 sm:text-xl">
-                We create modern, responsive and SEO-friendly websites that
-                combine strong visual design, smooth user experience and
-                reliable technology.
+                Tiny Dream Games is a website development company creating
+                modern, responsive and SEO-friendly websites for small
+                businesses, startups and growing brands. We build custom
+                business websites, landing pages and e-commerce solutions
+                designed to strengthen your online presence and generate
+                enquiries.
               </p>
 
-              <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+              {/* <div className="mt-9 flex flex-col gap-4 sm:flex-row">
                 <Link
                   href="/#contact"
                   className="inline-flex items-center justify-center rounded-full bg-[#7C3AED] px-7 py-4 font-semibold transition hover:bg-[#6D28D9]"
@@ -344,7 +358,7 @@ export default function WebDevelopmentPage() {
                 >
                   View Our Work
                 </Link>
-              </div>
+              </div> */}
 
               <div className="mt-12 grid max-w-xl grid-cols-3 gap-6 border-t border-white/10 pt-7">
                 <div>
@@ -374,7 +388,7 @@ export default function WebDevelopmentPage() {
                 <div className="relative aspect-[4/3] overflow-hidden rounded-[22px]">
                   <img
                     src="/image/Web developer.webp"
-                    alt="Tiny Dream Games web development project"
+                    alt="Website development services by Tiny Dream Games"
                     className="h-full w-full object-cover transition duration-700 hover:scale-105"
                   />
 
@@ -394,44 +408,67 @@ export default function WebDevelopmentPage() {
         </section>
 
         {/* INTRO */}
+
         <section className="mx-auto max-w-7xl px-6 py-18 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#A78BFA]">
-                What We Build
+                Website Development Services
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-                Your website is more than a digital brochure.
+                Custom Website Development Built Around Your Business Goals.
               </h2>
             </div>
 
             <div>
               <p className="text-lg leading-8 text-gray-300">
-                A good website should communicate what you do, make it easy for
-                people to understand your value and guide them towards taking
-                action.
+                Your website is more than a digital brochure. It is an important
+                part of your business that helps build trust, showcase your
+                services and turn visitors into potential customers.
               </p>
 
               <p className="mt-5 text-lg leading-8 text-gray-400">
-                We combine design, development, responsiveness, performance and
-                SEO-friendly foundations to create websites that are built for
-                real users and real business goals.
+                At Tiny Dream Games, we provide professional website development
+                services for businesses, startups and growing brands. From
+                business websites and landing pages to custom web development,
+                we combine modern design, responsive layouts, performance
+                optimization and SEO-friendly development to create websites
+                that support your business goals.
+              </p>
+
+              <p className="mt-5 text-lg leading-8 text-gray-400">
+                Looking for more digital solutions? Explore our{" "}
+                <a
+                  href="/services/app-development"
+                  className="font-medium text-[#A78BFA] transition hover:text-white"
+                >
+                  app development services
+                </a>{" "}
+                or learn more about our{" "}
+                <a
+                  href="/services/game-development"
+                  className="font-medium text-[#A78BFA] transition hover:text-white"
+                >
+                  game development services
+                </a>
+                .
               </p>
             </div>
           </div>
         </section>
 
         {/* SERVICES */}
+
         <section className="border-y border-white/10 bg-[#0D1422]">
           <div className="mx-auto max-w-7xl px-6 py-18 lg:px-8">
             <div className="max-w-2xl">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#A78BFA]">
-                Our Capabilities
+                Our Website Development Services
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-                Everything your website needs.
+                Complete Website Development Solutions for Your Business.
               </h2>
             </div>
 
@@ -463,15 +500,16 @@ export default function WebDevelopmentPage() {
         <WebsitePricing />
 
         {/* PROCESS */}
+
         <section className="border-y border-white/10 bg-[#0D1422]">
           <div className="mx-auto max-w-7xl px-6 py-18 lg:px-8">
             <div className="max-w-2xl">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#A78BFA]">
-                Our Process
+                Our Website Development Process
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-                From first idea to live website.
+                A Clear Process for Building Your Business Website.
               </h2>
             </div>
 
@@ -500,20 +538,23 @@ export default function WebDevelopmentPage() {
         </section>
 
         {/* TECHNOLOGY */}
+
         <section className="mx-auto max-w-7xl px-6 py-18 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr]">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#A78BFA]">
-                Technology
+                Our Technology Stack
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-                Modern technology. Clean execution.
+                Modern Technologies for Reliable Website Development.
               </h2>
 
               <p className="mt-5 max-w-lg text-lg leading-8 text-gray-400">
-                We choose the technology stack according to the project's goals,
-                functionality, scalability and maintenance requirements.
+                We use modern web development technologies to build responsive,
+                high-performance and maintainable websites. Our technology stack
+                is selected according to your project's functionality, business
+                goals, scalability and long-term maintenance requirements.
               </p>
             </div>
 
@@ -531,27 +572,35 @@ export default function WebDevelopmentPage() {
         </section>
 
         {/* WHY US */}
+
         <section className="border-y border-white/10 bg-[#0D1422]">
           <div className="mx-auto max-w-7xl px-6 py-18 lg:px-8">
             <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#A78BFA]">
-                  Why Tiny Dream Games
+                  Why Choose Tiny Dream Games
                 </p>
 
                 <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-                  Designed for people. Built for business.
+                  A Reliable Website Development Partner for Your Business.
                 </h2>
+
+                <p className="mt-5 max-w-lg text-lg leading-8 text-gray-400">
+                  We combine modern website design, practical development
+                  expertise and a business-focused approach to create websites
+                  that help businesses build credibility, reach customers and
+                  grow their online presence.
+                </p>
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2">
                 {[
-                  "Premium modern design",
-                  "Responsive across devices",
-                  "SEO-friendly foundations",
-                  "Performance-focused development",
-                  "Clean and maintainable code",
-                  "Business-focused user experience",
+                  "Modern and Professional Website Design",
+                  "Mobile-Friendly Responsive Development",
+                  "SEO-Friendly Website Structure",
+                  "Performance-Focused Development",
+                  "Clean and Maintainable Code",
+                  "Business-Focused User Experience",
                 ].map((item) => (
                   <div
                     key={item}

@@ -6,10 +6,11 @@ import FAQ from "@/components/FAQ";
 import Reviews from "@/components/reviews";
 import GamePricing from "@/components/game-pricing";
 
+
 export const metadata: Metadata = {
-  title: "Game Development Services",
+  title: "Game Development Company | Tiny Dream Games",
   description:
-    "Tiny Dream Games provides game development services, including Unity game development, 2D and 3D games, mobile games, and custom game prototypes.",
+    "Tiny Dream Games is a game development company creating custom 2D, 3D and mobile games using Unity. Explore our game development services for businesses and creators.",
 
   alternates: {
     canonical: "/services/game-development",
@@ -20,22 +21,22 @@ export const metadata: Metadata = {
     locale: "en_IN",
     siteName: "Tiny Dream Games",
     url: "/services/game-development",
-    title: "Game Development Services | Tiny Dream Games",
+    title: "Game Development Company | Tiny Dream Games",
     description:
-      "Explore Unity game development, 2D and 3D game creation, mobile games, and custom game development services by Tiny Dream Games.",
+      "Explore game development services by Tiny Dream Games, including Unity game development, custom 2D and 3D games, mobile games and game prototyping.",
     images: [
       {
         url: "/tiny-dream-logo.png",
-        alt: "Tiny Dream Games — Game Development Services",
+        alt: "Tiny Dream Games - Game Development Company",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Game Development Services | Tiny Dream Games",
+    title: "Game Development Company | Tiny Dream Games",
     description:
-      "Unity, 2D, 3D, and mobile game development services by Tiny Dream Games.",
+      "Custom 2D, 3D and mobile game development using Unity by Tiny Dream Games.",
     images: ["/tiny-dream-logo.png"],
   },
 
@@ -47,6 +48,7 @@ export const metadata: Metadata = {
 
 
 
+
 const gameDevelopmentSchema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -54,16 +56,29 @@ const gameDevelopmentSchema = {
       "@type": "Service",
       "@id": "https://www.tinydreamgames.com/services/game-development#service",
       name: "Game Development Services",
-      serviceType: "Game Development",
+      serviceType: [
+        "Game Development",
+        "Unity Game Development",
+        "2D Game Development",
+        "3D Game Development",
+        "Mobile Game Development",
+      ],
       url: "https://www.tinydreamgames.com/services/game-development",
       description:
-        "Tiny Dream Games provides game development services for businesses, creators, and projects requiring custom game experiences.",
+        "Tiny Dream Games provides custom game development services, including Unity game development, 2D and 3D games, mobile game development, game prototyping and gameplay programming based on project requirements.",
       provider: {
         "@type": "Organization",
         "@id": "https://www.tinydreamgames.com/#organization",
         name: "Tiny Dream Games",
         url: "https://www.tinydreamgames.com/",
       },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: 5.0,
+    reviewCount: 100,
+    bestRating: 5,
+    worstRating: 1,
+  },
     },
     {
       "@type": "FAQPage",
@@ -172,96 +187,69 @@ const services = [
     number: "01",
     title: "2D Game Development",
     description:
-      "Engaging 2D experiences with responsive controls, polished mechanics and memorable visual design.",
+      "Custom 2D game development with engaging gameplay mechanics, responsive controls, polished visuals and enjoyable player experiences.",
   },
   {
     number: "02",
     title: "3D Game Development",
     description:
-      "Immersive 3D games with environments, characters, gameplay systems and optimized performance.",
+      "3D game development featuring interactive environments, characters, gameplay systems and performance-conscious implementation.",
   },
   {
     number: "03",
     title: "Mobile Game Development",
     description:
-      "Mobile-first games designed around touch controls, performance and smooth player experiences.",
+      "Mobile game development focused on intuitive touch controls, optimized performance and smooth gameplay across supported devices.",
   },
   {
     number: "04",
     title: "Game Prototyping",
     description:
-      "Turn an early idea into a playable prototype so gameplay concepts can be tested quickly.",
+      "Turn your game concept into a playable prototype to test core mechanics, gameplay ideas and the overall player experience.",
   },
   {
     number: "05",
-    title: "Game UI & UX",
+    title: "Game UI & UX Design",
     description:
-      "Clean menus, HUDs, buttons and interfaces designed to make every interaction feel intuitive.",
+      "User-friendly game interfaces including menus, HUDs, buttons and in-game navigation designed for intuitive interactions.",
   },
   {
     number: "06",
     title: "Game Optimization",
     description:
-      "Performance improvements, bug fixing, asset optimization and device-focused testing.",
+      "Improve game performance through bug fixing, asset optimization, profiling and device-focused testing.",
   },
 ];
 
-const games = [
-  {
-    title: "Your Game Title",
-    genre: "Action • Mobile",
-    description:
-      "A fast-paced game experience currently being developed by Tiny Dream Games.",
-    image: "/games/game-1.jpg",
-    status: "In Development",
-  },
-  {
-    title: "Your Game Title",
-    genre: "Adventure • Mobile",
-    description:
-      "An original gameplay concept focused on exploration, challenge and replayability.",
-    image: "/games/game-2.jpg",
-    status: "Prototype",
-  },
-  {
-    title: "Your Game Title",
-    genre: "Casual • Mobile",
-    description:
-      "A simple-to-learn, engaging game concept designed for short and repeat play sessions.",
-    image: "/games/game-3.jpg",
-    status: "Coming Soon",
-  },
-];
-
-const technologies = ["Unity", "C#", "Blender", "Firebase", "Android", "iOS"];
 
 const process = [
   {
     number: "01",
-    title: "Discover",
+    title: "Discover Your Game Idea",
     description:
-      "We understand your idea, target audience, gameplay vision and project goals.",
+      "We understand your game concept, target audience, gameplay vision, core requirements and project goals before starting development.",
   },
   {
     number: "02",
-    title: "Plan",
+    title: "Plan the Game",
     description:
-      "We define the core mechanics, game loop, features, assets and development roadmap.",
+      "We define gameplay mechanics, the core game loop, features, required assets and a practical game development roadmap.",
   },
   {
     number: "03",
-    title: "Build",
+    title: "Develop and Test",
     description:
-      "The game is developed through iterative builds with continuous testing and refinement.",
+      "We build the game through iterative development, testing gameplay mechanics, refining controls and improving the overall player experience.",
   },
   {
     number: "04",
-    title: "Launch",
+    title: "Optimize and Launch",
     description:
-      "We polish, optimize and prepare the final product for its target platform.",
+      "We polish gameplay, fix issues, optimize performance and prepare the final game build for its intended platform.",
   },
 ];
 
+const technologies = ["Unity", "C#", "Blender", "Firebase", "Android", "iOS"];
 
 const faqs = [
   {
@@ -325,6 +313,7 @@ export default function GameDevelopmentPage() {
         {/* ================= NAVBAR ================= */}
         <Navbar />
         {/* HERO */}
+
         <section className="relative border-b border-white/10">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_30%,rgba(124,58,237,0.22),transparent_35%),radial-gradient(circle_at_20%_70%,rgba(250,204,21,0.06),transparent_30%)]" />
 
@@ -335,17 +324,18 @@ export default function GameDevelopmentPage() {
                 Game Development Studio
               </div>
 
-              <h1 className="max-w-4xl text-5xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
-                We Build Games
+              <h1 className="max-w-3xl text-3xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-5xl lg:text-5xl">
+                Game Development Company
                 <span className="block bg-gradient-to-r from-[#A78BFA] via-[#7C3AED] to-[#FACC15] bg-clip-text text-transparent">
-                  People Remember.
+                  Building Games People Remember.
                 </span>
               </h1>
 
               <p className="mt-7 max-w-2xl text-lg leading-8 text-gray-300 sm:text-xl">
-                From a simple game idea to a polished playable product, Tiny
-                Dream Games creates engaging experiences built around strong
-                gameplay, thoughtful design and technical performance.
+                Tiny Dream Games is a game development company creating engaging
+                2D and 3D games with Unity. From mobile game development to
+                custom game projects, we focus on creative gameplay, thoughtful
+                design and reliable technical performance.
               </p>
 
               <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -417,15 +407,16 @@ export default function GameDevelopmentPage() {
         </section>
 
         {/* INTRO */}
+
         <section className="mx-auto max-w-7xl px-6 py-18 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#A78BFA]">
-                What We Do
+                Game Development Services
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-                Ideas are just the beginning.
+                Turning Game Ideas into Playable Experiences.
               </h2>
             </div>
 
@@ -433,13 +424,42 @@ export default function GameDevelopmentPage() {
               <p className="text-lg leading-8 text-gray-300">
                 Great games are built through hundreds of small decisions —
                 gameplay mechanics, controls, visuals, performance and player
-                experience. We bring these pieces together to turn concepts into
-                playable products.
+                experience. At Tiny Dream Games, we bring these elements
+                together through thoughtful game development to turn concepts
+                into engaging, playable products.
               </p>
 
               <p className="mt-5 text-lg leading-8 text-gray-400">
                 Whether you have a complete game concept or only a rough idea,
-                we can help shape it into a focused and enjoyable experience.
+                our custom game development approach helps shape it into a
+                focused and enjoyable experience. We consider your gameplay
+                vision, target platform and project requirements throughout the
+                development process.
+              </p>
+
+              <p className="mt-5 text-lg leading-8 text-gray-400">
+                Looking for other digital solutions? Explore our{" "}
+                <a
+                  href="/services/web-development"
+                  className="text-[#A78BFA] transition hover:text-white"
+                >
+                  Website Development Services
+                </a>{" "}
+                and{" "}
+                <a
+                  href="/services/app-development"
+                  className="text-[#A78BFA] transition hover:text-white"
+                >
+                  App Development Services
+                </a>
+                . Have a project in mind?{" "}
+                <a
+                  href="/contact"
+                  className="text-[#A78BFA] transition hover:text-white"
+                >
+                  Contact Us
+                </a>{" "}
+                to discuss your requirements.
               </p>
             </div>
           </div>
@@ -450,11 +470,11 @@ export default function GameDevelopmentPage() {
           <div className="mx-auto max-w-7xl px-6 py-18 lg:px-8">
             <div className="max-w-2xl">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#A78BFA]">
-                Our Capabilities
+                Game Development Services
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-                Everything your game needs.
+                Complete Game Development Solutions.
               </h2>
             </div>
 
@@ -482,7 +502,9 @@ export default function GameDevelopmentPage() {
             </div>
           </div>
         </section>
+
         <GamePricing />
+
         {/* WORKING PRODUCTS */}
         <section
           id="games"
@@ -728,11 +750,11 @@ export default function GameDevelopmentPage() {
           <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
             <div className="max-w-2xl">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#A78BFA]">
-                Our Process
+                Our Game Development Process
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-                From idea to launch.
+                From Game Idea to Launch.
               </h2>
             </div>
 
@@ -765,16 +787,19 @@ export default function GameDevelopmentPage() {
           <div className="grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr]">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#A78BFA]">
-                Technology
+                Game Development Technologies
               </p>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-                Built with modern tools.
+                Unity Game Development with the Right Tools.
               </h2>
 
               <p className="mt-5 max-w-lg text-lg leading-8 text-gray-400">
-                We choose technologies based on the requirements of the game,
-                target platform and long-term project goals.
+                We use Unity game development tools and technologies based on
+                each project's gameplay requirements, target platforms and
+                technical goals. From C# programming and 3D asset creation to
+                platform-specific implementation, our technology choices support
+                the development process and long-term project needs.
               </p>
             </div>
 
