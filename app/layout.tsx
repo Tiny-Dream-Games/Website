@@ -19,10 +19,10 @@ const SITE_NAME = "Tiny Dream Games";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
 
-  title: "Tiny Dream Games | Game, Web and App Development",
+  title: "Web, App & Game Development Studio | Tiny Dream Games",
 
   description:
-    "Tiny Dream Games creates original games and develops custom websites and mobile applications for businesses, startups, and creators.",
+    "Tiny Dream Games is an independent development studio offering website, custom app and game development services for businesses, startups and creators.",
 
   alternates: {
     canonical: "/",
@@ -33,24 +33,24 @@ export const metadata: Metadata = {
     locale: "en_IN",
     siteName: SITE_NAME,
     url: "/",
-    title: "Tiny Dream Games | Game, Web and App Development",
+    title: "Web, App & Game Development Studio | Tiny Dream Games",
     description:
-      "Explore game development, website development, and app development services from Tiny Dream Games.",
+      "Explore website development, custom app development and game development services by Tiny Dream Games for businesses, startups and creators.",
     images: [
       {
         url: "/tiny-dream-logo.png",
         width: 1200,
         height: 630,
-        alt: "Tiny Dream Games",
+        alt: "Tiny Dream Games - Web, App and Game Development Studio",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Tiny Dream Games | Game, Web and App Development",
+    title: "Web, App & Game Development Studio | Tiny Dream Games",
     description:
-      "Original games, custom websites, and mobile applications by Tiny Dream Games.",
+      "Website development, custom applications and original game development by Tiny Dream Games.",
     images: ["/tiny-dream-logo.png"],
   },
 
@@ -74,7 +74,15 @@ const globalSchema = {
       name: SITE_NAME,
       url: `${SITE_URL}/`,
       description:
-        "Independent game development studio creating games, websites, and mobile applications.",
+        "Tiny Dream Games is an independent development studio offering website development, custom app development and game development services.",
+      knowsAbout: [
+        "Website Development",
+        "Web Development",
+        "App Development",
+        "Mobile Application Development",
+        "Game Development",
+        "Unity Game Development",
+      ],
     },
     {
       "@type": "WebSite",

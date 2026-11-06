@@ -105,8 +105,29 @@ export default function ContactPage() {
               </h1>
 
               <p className="mt-7 max-w-2xl text-base leading-8 text-white/45 sm:text-lg">
-                Have a game, website or app idea? Tell us what you&apos;re
-                building and let&apos;s see how we can bring it to life.
+                Have a game, website or app idea? Explore our{" "}
+                <Link
+                  href="/services/game-development"
+                  className="text-white/75 underline decoration-[#A78BFA]/40 underline-offset-4 transition hover:text-[#A78BFA]"
+                >
+                  game development services
+                </Link>
+                ,{" "}
+                <Link
+                  href="/services/web-development"
+                  className="text-white/75 underline decoration-[#A78BFA]/40 underline-offset-4 transition hover:text-[#A78BFA]"
+                >
+                  website development services
+                </Link>{" "}
+                or{" "}
+                <Link
+                  href="/services/app-development"
+                  className="text-white/75 underline decoration-[#A78BFA]/40 underline-offset-4 transition hover:text-[#A78BFA]"
+                >
+                  custom app development
+                </Link>
+                . Tell us what you're building and let's see how we can bring
+                your idea to life.
               </p>
             </div>
           </div>

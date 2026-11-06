@@ -103,18 +103,40 @@ export default function Home() {
             </div>
 
             {/* Heading */}
-            <h1 className="text-5xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
+            <h1 className="text-4xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-6xl lg:text-6xl">
               Web, App &amp;
               <br />
               <span className="bg-gradient-to-r from-[#A78BFA] via-[#C084FC] to-[#FACC15] bg-clip-text text-transparent">
-                Game Development
+                Game Development Studio
               </span>
             </h1>
 
             {/* Description */}
+
             <p className="mt-7 max-w-xl text-base leading-8 text-white/60 sm:text-lg">
-              We create games, websites and digital experiences that turn ideas
-              into something people can see, play and remember.
+              Tiny Dream Games is an independent development studio offering{" "}
+              <a
+                href="/services/web-development"
+                className="text-white/80 underline decoration-[#A78BFA]/50 underline-offset-4 transition hover:text-[#A78BFA]"
+              >
+                website development services
+              </a>
+              ,{" "}
+              <a
+                href="/services/app-development"
+                className="text-white/80 underline decoration-[#A78BFA]/50 underline-offset-4 transition hover:text-[#A78BFA]"
+              >
+                custom app development
+              </a>{" "}
+              and{" "}
+              <a
+                href="/services/game-development"
+                className="text-white/80 underline decoration-[#A78BFA]/50 underline-offset-4 transition hover:text-[#A78BFA]"
+              >
+                game development services
+              </a>
+              . We help businesses, startups and creators turn their ideas into
+              modern digital products and engaging gaming experiences.
             </p>
 
             {/* Buttons */}
@@ -150,14 +172,16 @@ export default function Home() {
 
               <div>
                 <p className="text-xl font-semibold">Web</p>
-                <p className="mt-1 text-xs text-white/40">Modern websites</p>
+                <p className="mt-1 text-xs text-white/40">Website solutions</p>
               </div>
 
               <div className="h-8 w-px bg-white/10" />
 
               <div>
                 <p className="text-xl font-semibold">Apps</p>
-                <p className="mt-1 text-xs text-white/40">Digital products</p>
+                <p className="mt-1 text-xs text-white/40">
+                  Custom applications
+                </p>
               </div>
             </div>
           </div>
@@ -178,7 +202,7 @@ export default function Home() {
 
               <Image
                 src="/logo-dark.png"
-                alt="Tiny Dream Games logo"
+                alt="Tiny Dream Games development studio logo"
                 width={420}
                 height={420}
                 priority
@@ -216,47 +240,48 @@ export default function Home() {
       </section>
 
       {/* ================= OUR GAMES ================= */}
-
       <section
         id="games"
-        className="relative overflow-hidden bg-[#111827] px-6 py-24 lg:px-10 lg:py-28"
+        className="relative overflow-hidden bg-[#111827] px-6 py-20 lg:px-10 lg:py-20"
       >
         {/* Background Glow */}
         <div className="pointer-events-none absolute left-1/2 top-0 h-[500px] w-[850px] -translate-x-1/2 rounded-full bg-[#7C3AED]/10 blur-[150px]" />
 
         <div className="relative z-10 mx-auto max-w-7xl">
-          {/* ================= SECTION HEADER ================= */}
-
+          {/* SECTION HEADER */}
           <div className="max-w-3xl">
             <div className="mb-5 flex items-center gap-3">
               <span className="h-px w-8 bg-[#FACC15]" />
-
               <span className="text-xs font-medium uppercase tracking-[0.22em] text-[#A78BFA]">
                 Our Games
               </span>
             </div>
 
             <h2 className="text-4xl font-semibold tracking-[-0.045em] text-white sm:text-5xl lg:text-6xl">
-              Games we&apos;ve
+              Games We've
               <br />
               <span className="bg-gradient-to-r from-[#A78BFA] via-[#C084FC] to-[#FACC15] bg-clip-text text-transparent">
-                dreamed up.
+                created with passion.
               </span>
             </h2>
 
             <p className="mt-5 max-w-2xl text-sm leading-7 text-white/45 sm:text-base">
-              Original games, imaginative worlds and experiences we&apos;re
-              building from the ground up.
+              Discover original indie games and interactive experiences
+              developed by Tiny Dream Games. From mobile arcade games to new
+              gameplay ideas, each project reflects our passion for{" "}
+              <a
+                href="/services/game-development"
+                className="text-white/75 underline decoration-[#A78BFA]/40 underline-offset-4 transition hover:text-[#A78BFA]"
+              >
+                creative game development
+              </a>
+              .
             </p>
           </div>
 
-          {/* =========================================================
-        COMPLETED / ACTIVE GAMES
-    ========================================================= */}
-
+          {/* COMPLETED / ACTIVE GAMES */}
           <div className="mt-20">
             {/* GAME 01 */}
-
             <article className="group">
               <div className="grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
                 {/* PORTRAIT GAMEPLAY VIDEO */}
@@ -302,7 +327,7 @@ export default function Home() {
                 <div className="lg:py-8">
                   {/* CATEGORY */}
                   <p className="text-[10px] font-medium uppercase tracking-[0.22em] text-[#A78BFA]">
-                    Arcade · Casual · Mobile
+                    Arcade · Casual · Mobile Game
                   </p>
 
                   {/* TITLE */}
@@ -315,10 +340,12 @@ export default function Home() {
 
                   {/* DESCRIPTION */}
                   <p className="mt-5 max-w-xl text-sm leading-7 text-white/55 sm:text-base">
-                    A classic brick-breaking arcade game developed by Tiny Dream
-                    Games. Control the paddle, keep the ball in play and break
-                    through challenging brick formations in a responsive 2D
-                    mobile gaming experience powered by Unity.
+                    Brick Breaker is a classic 2D arcade mobile game developed
+                    by Tiny Dream Games using Unity. Control the paddle, keep
+                    the ball in play and break through challenging brick
+                    formations in this engaging casual gaming experience. The
+                    project showcases our approach to Unity game development,
+                    gameplay mechanics and mobile game design.
                   </p>
 
                   {/* GAME DETAILS */}
@@ -373,27 +400,27 @@ export default function Home() {
               </div>
             </article>
 
-            {/* ================= FUTURE GAMES ================= */}
+            {/* FUTURE GAMES */}
             <div className="mt-24 border-t border-white/[0.08] pt-16">
               <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
                 <div>
                   <p className="text-[10px] font-medium uppercase tracking-[0.22em] text-[#A78BFA]">
-                    What&apos;s next
+                    What's Next
                   </p>
 
                   <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-white sm:text-3xl">
-                    More worlds are coming.
+                    More games are on the way.
                   </h3>
                 </div>
 
                 <p className="max-w-md text-sm leading-6 text-white/35">
-                  We&apos;re constantly exploring new ideas, mechanics and
-                  worlds. Some of them are still taking shape.
+                  We're exploring new concepts, gameplay mechanics and creative
+                  ideas for upcoming indie game projects. Stay tuned for what's
+                  coming next.
                 </p>
               </div>
 
               {/* Upcoming Game 01 */}
-
               <div className="mt-10 border-b border-white/[0.08] py-7">
                 <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
                   <div className="flex items-center gap-5">
@@ -403,11 +430,11 @@ export default function Home() {
 
                     <div>
                       <p className="text-[10px] uppercase tracking-[0.18em] text-white/30">
-                        Upcoming Project
+                        Upcoming Game
                       </p>
 
                       <h4 className="mt-1 text-lg font-medium text-white">
-                        DODA - The fun ball
+                        DODA - The Fun Ball
                       </h4>
                     </div>
                   </div>
@@ -423,7 +450,6 @@ export default function Home() {
               </div>
 
               {/* Upcoming Game 02 */}
-
               <div className="border-b border-white/[0.08] py-7">
                 <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
                   <div className="flex items-center gap-5">
@@ -437,7 +463,7 @@ export default function Home() {
                       </p>
 
                       <h4 className="mt-1 text-lg font-medium text-white">
-                        Something new is brewing
+                        Something New Is Brewing
                       </h4>
                     </div>
                   </div>
@@ -463,45 +489,40 @@ export default function Home() {
       >
         {/* Background glows */}
         <div className="pointer-events-none absolute -right-40 top-0 h-[500px] w-[500px] rounded-full bg-[#7C3AED]/10 blur-[140px]" />
-
         <div className="pointer-events-none absolute -left-40 bottom-0 h-[400px] w-[400px] rounded-full bg-[#A78BFA]/5 blur-[120px]" />
 
         <div className="relative z-10 mx-auto max-w-7xl">
-          {/* ================= HEADER ================= */}
+          {/* HEADER */}
           <div className="max-w-3xl">
             <div className="mb-5 flex items-center gap-3">
               <span className="h-px w-8 bg-[#FACC15]" />
-
               <span className="text-xs font-medium uppercase tracking-[0.22em] text-[#A78BFA]">
                 What We Do
               </span>
             </div>
 
             <h2 className="text-4xl font-semibold tracking-[-0.045em] text-white sm:text-5xl lg:text-6xl">
-              Ideas into
+              Web, App & Game
               <br />
               <span className="bg-gradient-to-r from-[#A78BFA] via-[#C084FC] to-[#FACC15] bg-clip-text text-transparent">
-                digital experiences.
+                Development Services.
               </span>
             </h2>
 
             <p className="mt-5 max-w-2xl text-sm leading-7 text-white/45 sm:text-base">
-              From games and websites to custom applications, we build digital
-              experiences designed around your ideas and goals.
+              Tiny Dream Games is a development studio offering website
+              development, custom app development and game development services.
+              We help businesses, startups and creators turn their ideas into
+              functional digital products and engaging experiences.
             </p>
           </div>
 
-          {/* ================= SERVICE CARDS ================= */}
+          {/* SERVICE CARDS */}
           <div className="mt-12 grid gap-5 lg:grid-cols-3">
-            {/* ================================================= */}
             {/* GAME DEVELOPMENT */}
-            {/* ================================================= */}
-
             <article className="group relative overflow-hidden rounded-[28px] border border-white/[0.08] bg-white/[0.035] p-7 shadow-[0_20px_60px_rgba(0,0,0,0.18)] transition-all duration-500 hover:-translate-y-1.5 hover:border-[#7C3AED]/30 hover:bg-white/[0.05] hover:shadow-[0_25px_80px_rgba(124,58,237,0.12)]">
-              {/* Glow */}
               <div className="pointer-events-none absolute -right-20 -top-20 h-40 w-40 rounded-full bg-[#7C3AED]/10 blur-[60px] transition duration-500 group-hover:bg-[#7C3AED]/20" />
 
-              {/* Icon */}
               <div className="relative flex h-14 w-14 items-center justify-center rounded-2xl border border-[#7C3AED]/20 bg-[#7C3AED]/10 text-[#A78BFA]">
                 <svg
                   className="h-7 w-7"
@@ -538,15 +559,15 @@ export default function Home() {
                 </p>
 
                 <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-white">
-                  Game Development
+                  Game Development Company
                 </h3>
 
                 <p className="mt-4 text-sm leading-7 text-white/45">
-                  From gameplay concepts to complete interactive experiences, we
-                  create games designed to be engaging, polished and memorable.
+                  We provide game development services to bring creative
+                  concepts to life. From gameplay programming to interactive
+                  experiences, we focus on building engaging games with Unity.
                 </p>
 
-                {/* Capabilities */}
                 <div className="mt-7 space-y-3">
                   <div className="flex items-center gap-3 text-sm text-white/65">
                     <span className="h-1.5 w-1.5 rounded-full bg-[#7C3AED]" />
@@ -555,7 +576,7 @@ export default function Home() {
 
                   <div className="flex items-center gap-3 text-sm text-white/65">
                     <span className="h-1.5 w-1.5 rounded-full bg-[#7C3AED]" />
-                    Unity Development
+                    Unity Game Development
                   </div>
 
                   <div className="flex items-center gap-3 text-sm text-white/65">
@@ -581,15 +602,10 @@ export default function Home() {
               </div>
             </article>
 
-            {/* ================================================= */}
             {/* WEB DEVELOPMENT */}
-            {/* ================================================= */}
-
             <article className="group relative overflow-hidden rounded-[28px] border border-white/[0.08] bg-white/[0.035] p-7 shadow-[0_20px_60px_rgba(0,0,0,0.18)] transition-all duration-500 hover:-translate-y-1.5 hover:border-[#A78BFA]/30 hover:bg-white/[0.05] hover:shadow-[0_25px_80px_rgba(124,58,237,0.10)]">
-              {/* Glow */}
               <div className="pointer-events-none absolute -right-20 -top-20 h-40 w-40 rounded-full bg-[#A78BFA]/10 blur-[60px] transition duration-500 group-hover:bg-[#A78BFA]/20" />
 
-              {/* Icon */}
               <div className="relative flex h-14 w-14 items-center justify-center rounded-2xl border border-[#A78BFA]/20 bg-[#A78BFA]/10 text-[#A78BFA]">
                 <svg
                   className="h-7 w-7"
@@ -614,19 +630,19 @@ export default function Home() {
                 </p>
 
                 <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-white">
-                  Web Development
+                  Website Development Company
                 </h3>
 
                 <p className="mt-4 text-sm leading-7 text-white/45">
-                  Modern websites and digital platforms built for businesses,
-                  brands, creators and startups.
+                  Our website development services help businesses, startups and
+                  brands establish a strong online presence through custom,
+                  responsive and SEO-friendly websites.
                 </p>
 
-                {/* Capabilities */}
                 <div className="mt-7 space-y-3">
                   <div className="flex items-center gap-3 text-sm text-white/65">
                     <span className="h-1.5 w-1.5 rounded-full bg-[#A78BFA]" />
-                    Business Websites
+                    Custom Business Websites
                   </div>
 
                   <div className="flex items-center gap-3 text-sm text-white/65">
@@ -641,7 +657,7 @@ export default function Home() {
 
                   <div className="flex items-center gap-3 text-sm text-white/65">
                     <span className="h-1.5 w-1.5 rounded-full bg-[#A78BFA]" />
-                    SEO & Performance
+                    SEO-Friendly Development
                   </div>
                 </div>
 
@@ -657,15 +673,10 @@ export default function Home() {
               </div>
             </article>
 
-            {/* ================================================= */}
             {/* APP DEVELOPMENT */}
-            {/* ================================================= */}
-
             <article className="group relative overflow-hidden rounded-[28px] border border-white/[0.08] bg-white/[0.035] p-7 shadow-[0_20px_60px_rgba(0,0,0,0.18)] transition-all duration-500 hover:-translate-y-1.5 hover:border-[#FACC15]/25 hover:bg-white/[0.05] hover:shadow-[0_25px_80px_rgba(245,158,11,0.08)]">
-              {/* Glow */}
               <div className="pointer-events-none absolute -right-20 -top-20 h-40 w-40 rounded-full bg-[#FACC15]/8 blur-[60px] transition duration-500 group-hover:bg-[#FACC15]/15" />
 
-              {/* Icon */}
               <div className="relative flex h-14 w-14 items-center justify-center rounded-2xl border border-[#FACC15]/20 bg-[#FACC15]/10 text-[#FACC15]">
                 <svg
                   className="h-7 w-7"
@@ -688,15 +699,15 @@ export default function Home() {
                 </p>
 
                 <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-white">
-                  App Development
+                  App Development Company
                 </h3>
 
                 <p className="mt-4 text-sm leading-7 text-white/45">
-                  Custom mobile and web applications designed around real
-                  business needs and user experiences.
+                  We build custom mobile and web applications tailored to
+                  business requirements, product ideas and user needs, with a
+                  focus on usability and reliable functionality.
                 </p>
 
-                {/* Capabilities */}
                 <div className="mt-7 space-y-3">
                   <div className="flex items-center gap-3 text-sm text-white/65">
                     <span className="h-1.5 w-1.5 rounded-full bg-[#FACC15]" />
@@ -721,7 +732,7 @@ export default function Home() {
 
                 <a
                   href="/services/app-development"
-                  className="group/link mt-8 inline-flex items-center gap-2 text-sm font-medium text-[#FACC15]"
+                  className="group/link mt-8 inline-flex items-center gap-2 text-sm font-medium text-[#A78BFA]"
                 >
                   Explore App Development
                   <span className="transition-transform duration-300 group-hover/link:translate-x-1">
@@ -732,9 +743,8 @@ export default function Home() {
             </article>
           </div>
 
-          {/* ================= BOTTOM CTA ================= */}
+          {/* BOTTOM CTA */}
           <div className="relative mt-6 overflow-hidden rounded-[28px] border border-white/[0.08] bg-gradient-to-r from-[#17132D] via-[#171B35] to-[#141A2C] p-7 shadow-[0_20px_60px_rgba(0,0,0,0.18)] sm:p-9">
-            {/* CTA glow */}
             <div className="pointer-events-none absolute -right-20 -top-32 h-64 w-64 rounded-full bg-[#7C3AED]/15 blur-[90px]" />
 
             <div className="relative flex flex-col justify-between gap-7 md:flex-row md:items-center">
@@ -763,21 +773,20 @@ export default function Home() {
       </section>
 
       {/* ================= ABOUT ================= */}
+
       <section
         id="about"
         className="relative overflow-hidden bg-[#111827] px-6 py-20 text-white lg:px-10 lg:py-18"
       >
         {/* Background glows */}
         <div className="pointer-events-none absolute right-[-180px] top-1/2 h-[500px] w-[500px] -translate-y-1/2 rounded-full bg-[#7C3AED]/10 blur-[140px]" />
-
         <div className="pointer-events-none absolute left-[-180px] bottom-[-100px] h-[400px] w-[400px] rounded-full bg-[#A78BFA]/5 blur-[120px]" />
 
         <div className="relative z-10 mx-auto max-w-7xl">
-          {/* ================= HEADER ================= */}
+          {/* HEADER */}
           <div className="max-w-3xl">
             <div className="mb-5 flex items-center gap-3">
               <span className="h-px w-8 bg-[#FACC15]" />
-
               <span className="text-xs font-medium uppercase tracking-[0.22em] text-[#A78BFA]">
                 About Tiny Dream Games
               </span>
@@ -792,17 +801,36 @@ export default function Home() {
             </h2>
 
             <p className="mt-5 max-w-2xl text-sm leading-7 text-white/45 sm:text-base">
-              Tiny Dream Games is an independent development studio creating
-              games and digital experiences that turn ideas into something
-              people can see, use and remember.
+              Tiny Dream Games is an independent development studio focused on{" "}
+              <a
+                href="/services/game-development"
+                className="text-white/75 underline decoration-[#A78BFA]/40 underline-offset-4 transition hover:text-[#A78BFA]"
+              >
+                game development
+              </a>
+              ,{" "}
+              <a
+                href="/services/web-development"
+                className="text-white/75 underline decoration-[#A78BFA]/40 underline-offset-4 transition hover:text-[#A78BFA]"
+              >
+                website development
+              </a>{" "}
+              and{" "}
+              <a
+                href="/services/app-development"
+                className="text-white/75 underline decoration-[#A78BFA]/40 underline-offset-4 transition hover:text-[#A78BFA]"
+              >
+                custom application development
+              </a>
+              . We turn ideas into thoughtfully built digital products and
+              interactive experiences for businesses, startups and creators.
             </p>
           </div>
 
-          {/* ================= MAIN CONTENT ================= */}
+          {/* MAIN CONTENT */}
           <div className="mt-14 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-            {/* ================= STORY CARD ================= */}
+            {/* STORY CARD */}
             <div className="relative overflow-hidden rounded-[30px] border border-white/[0.08] bg-gradient-to-br from-white/[0.055] to-white/[0.02] p-7 shadow-[0_25px_80px_rgba(0,0,0,0.2)] sm:p-9">
-              {/* Decorative glow */}
               <div className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-[#7C3AED]/10 blur-[90px]" />
 
               <div className="relative">
@@ -811,30 +839,31 @@ export default function Home() {
                 </span>
 
                 <h3 className="mt-4 max-w-xl text-2xl font-semibold tracking-[-0.03em] text-white sm:text-3xl">
-                  Building ideas from the first sketch to the final experience.
+                  Building digital products and games from idea to experience.
                 </h3>
 
                 <div className="mt-6 space-y-5 text-sm leading-7 text-white/45">
                   <p>
-                    We believe good digital products start with a simple idea
-                    and become meaningful through thoughtful design, technology
-                    and attention to detail.
+                    We believe every meaningful digital product starts with an
+                    idea. The right combination of creative thinking, thoughtful
+                    design and reliable development can turn that idea into
+                    something people can use and enjoy.
                   </p>
 
                   <p>
-                    Our focus is split across three areas: creating original
-                    games, building modern websites and developing custom
-                    applications for businesses and creators.
+                    Our work focuses on three areas: creating original games,
+                    developing modern websites and building custom applications
+                    for businesses, startups and creators.
                   </p>
 
                   <p>
-                    Whether we're building our own game or bringing someone
-                    else's idea to life, the goal stays the same — create
-                    something useful, engaging and worth experiencing.
+                    Whether it is a website for a growing business, a custom
+                    application or an original game project, we aim to build
+                    solutions around real requirements and a clear purpose.
                   </p>
                 </div>
 
-                {/* Brand statement */}
+                {/* BRAND STATEMENT */}
                 <div className="mt-8 border-l border-[#7C3AED]/40 pl-5">
                   <p className="text-lg font-medium leading-8 text-white/80">
                     "Every big idea starts small."
@@ -847,9 +876,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* ================= VALUES ================= */}
+            {/* VALUES */}
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
-              {/* Value 1 */}
+              {/* VALUE 1 */}
               <div className="group relative overflow-hidden rounded-[26px] border border-white/[0.08] bg-white/[0.035] p-6 transition-all duration-400 hover:border-[#7C3AED]/25 hover:bg-white/[0.05]">
                 <div className="flex items-start gap-5">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-[#7C3AED]/20 bg-[#7C3AED]/10 text-[#A78BFA]">
@@ -872,14 +901,15 @@ export default function Home() {
                     </h4>
 
                     <p className="mt-2 text-sm leading-6 text-white/40">
-                      Every feature and design decision should contribute to the
-                      experience rather than simply adding complexity.
+                      Every feature and design decision should serve a clear
+                      purpose and make the final product more useful and
+                      meaningful.
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Value 2 */}
+              {/* VALUE 2 */}
               <div className="group relative overflow-hidden rounded-[26px] border border-white/[0.08] bg-white/[0.035] p-6 transition-all duration-400 hover:border-[#A78BFA]/25 hover:bg-white/[0.05]">
                 <div className="flex items-start gap-5">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-[#A78BFA]/20 bg-[#A78BFA]/10 text-[#A78BFA]">
@@ -904,14 +934,15 @@ export default function Home() {
                     </h4>
 
                     <p className="mt-2 text-sm leading-6 text-white/40">
-                      We bring design thinking and development together to
-                      create experiences that look good and work well.
+                      We combine creative thinking with practical development to
+                      build digital experiences that look good and work as
+                      intended.
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Value 3 */}
+              {/* VALUE 3 */}
               <div className="group relative overflow-hidden rounded-[26px] border border-white/[0.08] bg-white/[0.035] p-6 transition-all duration-400 hover:border-[#FACC15]/20 hover:bg-white/[0.05]">
                 <div className="flex items-start gap-5">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-[#FACC15]/20 bg-[#FACC15]/10 text-[#FACC15]">
@@ -937,8 +968,8 @@ export default function Home() {
                     </h4>
 
                     <p className="mt-2 text-sm leading-6 text-white/40">
-                      We keep experimenting with new ideas, tools and
-                      technologies to make every project better.
+                      We keep exploring new ideas, development tools and
+                      technologies to improve the way we approach every project.
                     </p>
                   </div>
                 </div>
@@ -946,7 +977,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* ================= STUDIO FOCUS ================= */}
+          {/* STUDIO FOCUS */}
           <div className="mt-6 grid gap-4 sm:grid-cols-3">
             <div className="rounded-[24px] border border-white/[0.08] bg-white/[0.025] p-6">
               <span className="text-[10px] uppercase tracking-[0.18em] text-[#A78BFA]">
@@ -954,11 +985,12 @@ export default function Home() {
               </span>
 
               <h4 className="mt-3 text-lg font-semibold text-white">
-                Original Games
+                Game Development
               </h4>
 
               <p className="mt-2 text-sm leading-6 text-white/35">
-                Building our own worlds, mechanics and interactive experiences.
+                Creating original games, gameplay mechanics and interactive
+                experiences with Unity.
               </p>
             </div>
 
@@ -968,11 +1000,12 @@ export default function Home() {
               </span>
 
               <h4 className="mt-3 text-lg font-semibold text-white">
-                Digital Products
+                Website & App Development
               </h4>
 
               <p className="mt-2 text-sm leading-6 text-white/35">
-                Modern websites and applications designed around real needs.
+                Developing modern websites and custom applications around
+                business and product requirements.
               </p>
             </div>
 
@@ -986,12 +1019,13 @@ export default function Home() {
               </h4>
 
               <p className="mt-2 text-sm leading-6 text-white/35">
-                Turning business ideas into polished digital experiences.
+                Helping businesses and creators turn their ideas into practical
+                digital solutions.
               </p>
             </div>
           </div>
 
-          {/* ================= CTA ================= */}
+          {/* CTA */}
           <div className="mt-6 flex flex-col justify-between gap-6 rounded-[28px] border border-white/[0.08] bg-gradient-to-r from-[#17132D] via-[#171B35] to-[#141A2C] p-7 sm:p-9 md:flex-row md:items-center">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#A78BFA]">
@@ -1017,23 +1051,22 @@ export default function Home() {
       </section>
 
       {/* ================= PROCESS ================= */}
+
       <section
         id="process"
         className="relative overflow-hidden bg-[#111827] px-6 py-24 text-white lg:px-10 lg:py-18"
       >
         {/* Ambient glow */}
         <div className="pointer-events-none absolute right-[-180px] top-[20%] h-[500px] w-[500px] rounded-full bg-[#7C3AED]/[0.06] blur-[150px]" />
-
         <div className="pointer-events-none absolute left-[-200px] bottom-[-200px] h-[450px] w-[450px] rounded-full bg-[#A78BFA]/[0.035] blur-[140px]" />
 
         <div className="relative z-10 mx-auto max-w-7xl">
-          {/* ================= TOP ================= */}
+          {/* TOP */}
           <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
             {/* LEFT */}
             <div className="lg:sticky lg:top-32 lg:self-start">
               <div className="mb-6 flex items-center gap-3">
                 <span className="h-px w-9 bg-[#FACC15]" />
-
                 <span className="text-[10px] font-medium uppercase tracking-[0.25em] text-[#A78BFA]">
                   How We Work
                 </span>
@@ -1048,8 +1081,9 @@ export default function Home() {
               </h2>
 
               <p className="mt-6 max-w-md text-sm leading-7 text-white/35">
-                We keep the process simple, transparent and focused — so every
-                idea has room to become something meaningful.
+                Our website, app and game development process is built around
+                clear communication, careful planning and thoughtful execution.
+                We keep every stage simple and focused on your project goals.
               </p>
 
               {/* Small philosophy */}
@@ -1064,25 +1098,21 @@ export default function Home() {
               </div>
             </div>
 
-            {/* ================= RIGHT PROCESS ================= */}
+            {/* RIGHT PROCESS */}
             <div className="relative">
               {/* STEP 01 */}
               <div className="group relative border-t border-white/[0.08] py-7 transition-all duration-500 hover:border-[#7C3AED]/30 sm:py-8">
                 <div className="grid gap-5 sm:grid-cols-[80px_1fr_auto] sm:items-start">
-                  {/* Number */}
                   <div className="flex items-center gap-3 sm:block">
                     <span className="text-sm font-medium text-[#A78BFA]">
                       01
                     </span>
-
                     <span className="h-px w-6 bg-[#7C3AED]/30 sm:mt-3 sm:block" />
                   </div>
 
-                  {/* Content */}
                   <div>
                     <div className="flex items-center gap-2">
                       <span className="h-1.5 w-1.5 rounded-full bg-[#A78BFA] shadow-[0_0_10px_rgba(167,139,250,0.5)]" />
-
                       <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-[#A78BFA]">
                         Discover
                       </span>
@@ -1093,12 +1123,13 @@ export default function Home() {
                     </h3>
 
                     <p className="mt-3 max-w-xl text-sm leading-7 text-white/35">
-                      We understand your idea, goals, audience and what you want
-                      the final product to achieve.
+                      We learn about your business, project idea, target
+                      audience and goals. This helps us understand what you
+                      need, whether it's a business website, custom app or game
+                      development project.
                     </p>
                   </div>
 
-                  {/* Arrow */}
                   <div className="hidden h-10 w-10 items-center justify-center rounded-full border border-white/[0.08] text-white/20 transition-all duration-300 group-hover:border-[#7C3AED]/30 group-hover:bg-[#7C3AED]/10 group-hover:text-[#A78BFA] sm:flex">
                     <span className="transition-transform duration-300 group-hover:translate-x-0.5">
                       →
@@ -1114,14 +1145,12 @@ export default function Home() {
                     <span className="text-sm font-medium text-[#C084FC]">
                       02
                     </span>
-
                     <span className="h-px w-6 bg-[#A78BFA]/30 sm:mt-3 sm:block" />
                   </div>
 
                   <div>
                     <div className="flex items-center gap-2">
                       <span className="h-1.5 w-1.5 rounded-full bg-[#C084FC] shadow-[0_0_10px_rgba(192,132,252,0.5)]" />
-
                       <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-[#C084FC]">
                         Plan
                       </span>
@@ -1132,8 +1161,10 @@ export default function Home() {
                     </h3>
 
                     <p className="mt-3 max-w-xl text-sm leading-7 text-white/35">
-                      We define the scope, features, technology and direction
-                      before development begins.
+                      We define the project scope, required features, design
+                      direction, technology and development approach before work
+                      begins. The plan is tailored to your specific website,
+                      application or game requirements.
                     </p>
                   </div>
 
@@ -1150,14 +1181,12 @@ export default function Home() {
                     <span className="text-sm font-medium text-[#D8B4FE]">
                       03
                     </span>
-
                     <span className="h-px w-6 bg-[#C084FC]/30 sm:mt-3 sm:block" />
                   </div>
 
                   <div>
                     <div className="flex items-center gap-2">
                       <span className="h-1.5 w-1.5 rounded-full bg-[#D8B4FE] shadow-[0_0_10px_rgba(216,180,254,0.5)]" />
-
                       <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-[#D8B4FE]">
                         Build
                       </span>
@@ -1168,8 +1197,10 @@ export default function Home() {
                     </h3>
 
                     <p className="mt-3 max-w-xl text-sm leading-7 text-white/35">
-                      Design and development come together as we turn the plan
-                      into a working digital experience.
+                      We bring the plan to life through design, programming and
+                      development. From responsive website development and
+                      custom applications to Unity game development, each
+                      project is built around its intended experience.
                     </p>
                   </div>
 
@@ -1186,14 +1217,12 @@ export default function Home() {
                     <span className="text-sm font-medium text-[#FACC15]">
                       04
                     </span>
-
                     <span className="h-px w-6 bg-[#FACC15]/30 sm:mt-3 sm:block" />
                   </div>
 
                   <div>
                     <div className="flex items-center gap-2">
                       <span className="h-1.5 w-1.5 rounded-full bg-[#FACC15] shadow-[0_0_10px_rgba(250,204,21,0.5)]" />
-
                       <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-[#FACC15]">
                         Launch
                       </span>
@@ -1204,8 +1233,10 @@ export default function Home() {
                     </h3>
 
                     <p className="mt-3 max-w-xl text-sm leading-7 text-white/35">
-                      We test, refine and prepare the final product for launch,
-                      delivery and future improvements.
+                      We test functionality, refine the experience and prepare
+                      the completed project for delivery or launch. Further
+                      improvements can be planned as your business or product
+                      evolves.
                     </p>
                   </div>
 
@@ -1217,7 +1248,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* ================= BOTTOM STRIP ================= */}
+          {/* BOTTOM STRIP */}
           <div className="mt-12 flex flex-col justify-between gap-5 border-t border-white/[0.06] pt-7 sm:flex-row sm:items-center">
             <div className="flex items-center gap-3">
               <span className="h-1.5 w-1.5 rounded-full bg-[#FACC15] shadow-[0_0_10px_rgba(250,204,21,0.5)]" />
