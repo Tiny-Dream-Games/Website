@@ -10,7 +10,7 @@ import GamePricing from "@/components/game-pricing";
 export const metadata: Metadata = {
   title: "Game Development Company | Tiny Dream Games",
   description:
-    "Tiny Dream Games is a game development company creating custom 2D, 3D and mobile games using Unity. Explore our game development services for businesses and creators.",
+    "Tiny Dream Games creates custom 2D, 3D and mobile games using Unity for businesses and creators.",
 
   alternates: {
     canonical: "/services/game-development",
