@@ -72,13 +72,6 @@ const gameDevelopmentSchema = {
         name: "Tiny Dream Games",
         url: "https://www.tinydreamgames.com/",
       },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: 5.0,
-    reviewCount: 100,
-    bestRating: 5,
-    worstRating: 1,
-  },
     },
     {
       "@type": "FAQPage",
