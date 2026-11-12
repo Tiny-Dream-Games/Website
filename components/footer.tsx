@@ -332,6 +332,18 @@ export default function Navbar() {
               </div>
             </div>
           </div>
+
+          <a
+            href="https://techbehemoths.com/company/tiny-dream-games"
+            target="_blank"
+            rel="noopener"
+            data-techbehemoths-verification
+          >
+            <img
+              src="https://cdn.techbehemoths.com/public/static/validation/tb-verified-logo.svg"
+              alt="TechBehemoths Verification"
+            />
+          </a>
         </div>
 
         {/* ================= DIVIDER ================= */}
