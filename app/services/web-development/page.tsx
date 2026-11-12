@@ -329,7 +329,7 @@ export default function WebDevelopmentPage() {
               </h1>
 
               <p className="mt-7 max-w-2xl text-lg leading-8 text-gray-300 sm:text-xl">
-                Tiny Dream Games is a website development company creating
+                Tiny Dream Games is a Website Development Services creating
                 modern, responsive and SEO-friendly websites for small
                 businesses, startups and growing brands. We build custom
                 business websites, landing pages and e-commerce solutions

@@ -559,7 +559,7 @@ export default function Home() {
                 </p>
 
                 <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-white">
-                  Game Development Company
+                  Game Development Services
                 </h3>
 
                 <p className="mt-4 text-sm leading-7 text-white/45">
@@ -630,7 +630,7 @@ export default function Home() {
                 </p>
 
                 <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-white">
-                  Website Development Company
+                  Website Development Services
                 </h3>
 
                 <p className="mt-4 text-sm leading-7 text-white/45">
@@ -699,7 +699,7 @@ export default function Home() {
                 </p>
 
                 <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-white">
-                  App Development Company
+                  App Development Services
                 </h3>
 
                 <p className="mt-4 text-sm leading-7 text-white/45">

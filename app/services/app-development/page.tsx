@@ -8,9 +8,9 @@ import AppPricing from "@/components/app-pricing";
 
 
 export const metadata: Metadata = {
-  title: "App Development Company | Tiny Dream Games",
+  title: "App Development Services | Tiny Dream Games",
   description:
-    "Tiny Dream Games is an app development company offering custom mobile app and web application development services for businesses, startups and growing brands.",
+    "Tiny Dream Games is an App Development Services offering custom mobile app and web application development services for businesses, startups and growing brands.",
 
   alternates: {
     canonical: "/services/app-development",
@@ -20,21 +20,21 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     siteName: "Tiny Dream Games",
-    title: "App Development Company | Tiny Dream Games",
+    title: "App Development Services | Tiny Dream Games",
     description:
       "Explore custom app development services by Tiny Dream Games. We build mobile and web applications tailored to business and product requirements.",
     url: "/services/app-development",
     images: [
       {
         url: "/tiny-dream-logo.png",
-        alt: "Tiny Dream Games - App Development Company",
+        alt: "Tiny Dream Games - App Development Services",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "App Development Company | Tiny Dream Games",
+    title: "App Development Services | Tiny Dream Games",
     description:
       "Custom mobile app and web application development services for businesses and startups.",
     images: ["/tiny-dream-logo.png"],
@@ -326,14 +326,14 @@ export default function AppDevelopmentPage() {
               </div>
 
               <h1 className="max-w-3xl text-3xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-5xl lg:text-5xl">
-                App Development Company
+                App Development Services
                 <span className="block bg-gradient-to-r from-[#A78BFA] via-[#7C3AED] to-[#FACC15] bg-clip-text text-transparent">
                   for Custom Mobile & Web Apps.
                 </span>
               </h1>
 
               <p className="mt-7 max-w-2xl text-lg leading-8 text-gray-300 sm:text-xl">
-                Tiny Dream Games is an app development company creating custom
+                Tiny Dream Games is an App Development Services creating custom
                 mobile and web applications for businesses, startups and growing
                 brands. Our app development services focus on intuitive user
                 interfaces, useful functionality, responsive experiences and
