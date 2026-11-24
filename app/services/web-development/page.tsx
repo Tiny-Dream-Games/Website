@@ -21,22 +21,22 @@ export const metadata: Metadata = {
     locale: "en_IN",
     siteName: "Tiny Dream Games",
     url: "/services/web-development",
-    title: "Website Development Company | Tiny Dream Games",
+    title: "Website Development Services | Tiny Dream Games",
     description:
-      "Explore professional website development services by Tiny Dream Games, including custom business websites, responsive web design and modern web solutions.",
+      "Explore website development services by Tiny Dream Games, including custom business websites, responsive web design and modern web solutions tailored to your business needs.",
     images: [
       {
         url: "/tiny-dream-logo.png",
-        alt: "Tiny Dream Games - Website Development Company",
+        alt: "Tiny Dream Games - Website Development Services",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Website Development Company | Tiny Dream Games",
+    title: "Website Development Services | Tiny Dream Games",
     description:
-      "Custom and responsive website development services for businesses, startups and growing brands.",
+      "Custom, responsive and SEO-friendly website development for businesses, startups and growing brands.",
     images: ["/tiny-dream-logo.png"],
   },
 
@@ -174,37 +174,37 @@ const services = [
     number: "01",
     title: "Business Website Development",
     description:
-      "Professional business website development to showcase your services, establish credibility, build customer trust and generate enquiries.",
+      "Professional business website development to showcase your services, establish credibility, strengthen your online presence and encourage potential customers to get in touch.",
   },
   {
     number: "02",
     title: "Landing Page Development",
     description:
-      "Conversion-focused landing page development for products, services and marketing campaigns, designed to guide visitors towards clear actions.",
+      "Conversion-focused landing pages for products, services and marketing campaigns, featuring clear messaging, focused layouts and calls to action that encourage visitors to take the next step.",
   },
   {
     number: "03",
     title: "Custom Website Development",
     description:
-      "Custom website development tailored to your business requirements, with unique functionality, flexible layouts and solutions beyond generic templates.",
+      "Custom websites tailored to your business requirements, with unique functionality, flexible layouts and personalized solutions beyond standard templates.",
   },
   {
     number: "04",
     title: "Responsive Web Design",
     description:
-      "Mobile-friendly website design that delivers a consistent browsing experience across smartphones, tablets, laptops and desktop screens.",
+      "Responsive website design that adapts to smartphones, tablets, laptops and desktops, providing a smooth and consistent browsing experience across screen sizes.",
   },
   {
     number: "05",
     title: "SEO-Friendly Website Development",
     description:
-      "Search-friendly website development with semantic HTML, clean page structure, metadata, responsive layouts and performance-focused foundations.",
+      "SEO-friendly website development with semantic HTML, structured content, optimized metadata and performance-focused foundations to support search engine visibility.",
   },
   {
     number: "06",
     title: "Website Maintenance & Support",
     description:
-      "Reliable website maintenance, including content updates, bug fixes, security updates, performance improvements and ongoing technical support.",
+      "Ongoing website maintenance and support, including content updates, bug fixes, security patches, performance improvements and technical assistance.",
   },
 ];
 
@@ -214,25 +214,25 @@ const process = [
     number: "01",
     title: "Discovery & Planning",
     description:
-      "We understand your business goals, target audience, website requirements, content and project scope to create a clear development plan.",
+      "We understand your business goals, target audience, website requirements, content and project scope to establish a clear development plan tailored to your needs.",
   },
   {
     number: "02",
     title: "Website Design",
     description:
-      "We plan the page structure and create a modern website design that reflects your brand, improves user experience and works across devices.",
+      "We plan your website structure and create a modern, user-friendly design that reflects your brand identity, improves user experience and works seamlessly across devices.",
   },
   {
     number: "03",
     title: "Website Development",
     description:
-      "We build your website with responsive layouts, clean code, required functionality and SEO-friendly technical foundations.",
+      "We develop your website with responsive layouts, clean code, essential functionality and SEO-friendly technical foundations to deliver a reliable online experience.",
   },
   {
     number: "04",
     title: "Testing & Launch",
     description:
-      "We test website functionality, mobile responsiveness and performance, then prepare your website for deployment and launch.",
+      "We test website functionality, responsiveness, compatibility and performance, fix issues and prepare your website for deployment and launch.",
   },
 ];
 
@@ -329,30 +329,15 @@ export default function WebDevelopmentPage() {
               </h1>
 
               <p className="mt-7 max-w-2xl text-lg leading-8 text-gray-300 sm:text-xl">
-                Tiny Dream Games is a Website Development Services creating
+                Tiny Dream Games offers website development services, creating
                 modern, responsive and SEO-friendly websites for small
                 businesses, startups and growing brands. We build custom
                 business websites, landing pages and e-commerce solutions
-                designed to strengthen your online presence and generate
-                enquiries.
+                designed to strengthen your online presence and help businesses
+                attract potential customers.
               </p>
 
-              {/* <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-                <Link
-                  href="/#contact"
-                  className="inline-flex items-center justify-center rounded-full bg-[#7C3AED] px-7 py-4 font-semibold transition hover:bg-[#6D28D9]"
-                >
-                  Start Your Website
-                  <span className="ml-2">→</span>
-                </Link>
-
-                <Link
-                  href="#projects"
-                  className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-7 py-4 font-semibold transition hover:bg-white/10"
-                >
-                  View Our Work
-                </Link>
-              </div> */}
+              {/* CTA buttons intentionally kept commented out */}
 
               <div className="mt-12 grid max-w-xl grid-cols-3 gap-6 border-t border-white/10 pt-7">
                 <div>
@@ -417,18 +402,19 @@ export default function WebDevelopmentPage() {
 
             <div>
               <p className="text-lg leading-8 text-gray-300">
-                Your website is more than a digital brochure. It is an important
-                part of your business that helps build trust, showcase your
-                services and turn visitors into potential customers.
+                Your website is more than a digital brochure. It plays an
+                important role in building trust, presenting your services,
+                connecting with potential customers and creating a strong online
+                presence for your business.
               </p>
 
               <p className="mt-5 text-lg leading-8 text-gray-400">
-                At Tiny Dream Games, we provide professional website development
-                services for businesses, startups and growing brands. From
-                business websites and landing pages to custom web development,
-                we combine modern design, responsive layouts, performance
-                optimization and SEO-friendly development to create websites
-                that support your business goals.
+                At Tiny Dream Games, we offer website development services for
+                businesses, startups and growing brands. From business websites
+                and landing pages to custom web solutions, we combine modern
+                design, responsive layouts, performance optimization and
+                SEO-friendly development to create websites tailored to your
+                business needs and goals.
               </p>
 
               <p className="mt-5 text-lg leading-8 text-gray-400">

@@ -10,7 +10,7 @@ import AppPricing from "@/components/app-pricing";
 export const metadata: Metadata = {
   title: "App Development Services | Tiny Dream Games",
   description:
-    "Tiny Dream Games is an App Development Services offering custom mobile app and web application development services for businesses, startups and growing brands.",
+    "Tiny Dream Games offers custom app development services, building mobile apps and web applications tailored to the needs of businesses, startups, and growing brands.",
 
   alternates: {
     canonical: "/services/app-development",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "Tiny Dream Games",
     title: "App Development Services | Tiny Dream Games",
     description:
-      "Explore custom app development services by Tiny Dream Games. We build mobile and web applications tailored to business and product requirements.",
+      "Explore custom app development services by Tiny Dream Games. We build mobile apps and web applications tailored to business needs, ideas, and product requirements.",
     url: "/services/app-development",
     images: [
       {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "App Development Services | Tiny Dream Games",
     description:
-      "Custom mobile app and web application development services for businesses and startups.",
+      "Custom mobile app and web application development for businesses, startups, and growing brands.",
     images: ["/tiny-dream-logo.png"],
   },
 
@@ -178,37 +178,37 @@ const services = [
     number: "01",
     title: "Mobile App Development",
     description:
-      "Custom mobile app development for businesses and startups, with intuitive interfaces, useful features and experiences tailored to your users.",
+      "Custom mobile app development for businesses and startups, delivering intuitive interfaces, practical features and seamless experiences tailored to your target audience.",
   },
   {
     number: "02",
     title: "Android App Development",
     description:
-      "Android application development focused on responsive interfaces, smooth interactions and functionality built around your business requirements.",
+      "Android app development with user-friendly interfaces, smooth performance and reliable functionality designed around your business needs and Android users.",
   },
   {
     number: "03",
     title: "iOS App Development",
     description:
-      "Custom iOS applications designed with clean interfaces, user-friendly navigation and experiences suited to Apple devices.",
+      "iOS app development for Apple devices, featuring clean UI design, intuitive navigation and seamless experiences tailored to iPhone and iPad users.",
   },
   {
     number: "04",
     title: "Cross-Platform App Development",
     description:
-      "Cross-platform app development solutions for projects that need to reach users across multiple mobile platforms.",
+      "Cross-platform applications that help businesses reach Android and iOS users through a consistent experience across multiple mobile devices.",
   },
   {
     number: "05",
     title: "Custom App Development",
     description:
-      "Custom app development tailored to your product idea, from essential business features to more advanced application functionality.",
+      "Tailored application development built around your unique idea, business workflows and product requirements, from essential features to complex functionality.",
   },
   {
     number: "06",
     title: "App Maintenance and Support",
     description:
-      "Application maintenance services including bug fixes, performance improvements, updates and ongoing technical support.",
+      "Ongoing app maintenance and support to keep your application reliable, including bug fixes, updates, performance improvements and technical assistance.",
   },
 ];
 
@@ -218,25 +218,25 @@ const process = [
     number: "01",
     title: "Discover Your Idea",
     description:
-      "We understand your app idea, target users, business goals, required features and platform requirements to define the right development direction.",
+      "We understand your app idea, target audience, business objectives, key features and platform requirements to establish a clear direction for your application.",
   },
   {
     number: "02",
     title: "Plan the Application",
     description:
-      "We plan the application structure, user journeys, core features and technical requirements before starting the app development process.",
+      "We define the app structure, user flows, feature priorities and technical requirements to create a clear development roadmap before building begins.",
   },
   {
     number: "03",
     title: "Design and Develop",
     description:
-      "We build your custom application with intuitive user interfaces, useful functionality, responsive experiences and performance in mind.",
+      "We design and develop your application with intuitive UI/UX, purposeful functionality and reliable performance, keeping your product requirements and user experience in focus.",
   },
   {
     number: "04",
     title: "Test and Launch",
     description:
-      "We test the application, fix issues, prepare the final build and help get your product ready for its intended platform.",
+      "We test key features, identify and fix issues, prepare the final application build and help you get ready for deployment on your target platform.",
   },
 ];
 
@@ -333,11 +333,11 @@ export default function AppDevelopmentPage() {
               </h1>
 
               <p className="mt-7 max-w-2xl text-lg leading-8 text-gray-300 sm:text-xl">
-                Tiny Dream Games is an App Development Services creating custom
-                mobile and web applications for businesses, startups and growing
-                brands. Our app development services focus on intuitive user
-                interfaces, useful functionality, responsive experiences and
-                scalable solutions tailored to your product requirements.
+                Tiny Dream Games offers custom app development services for
+                businesses, startups and growing brands. We build mobile apps
+                and web applications with intuitive user interfaces, useful
+                functionality, responsive experiences and scalable solutions
+                tailored to your product requirements.
               </p>
 
               {/* 
@@ -491,17 +491,18 @@ export default function AppDevelopmentPage() {
 
             <div>
               <p className="text-lg leading-8 text-gray-300">
-                Whether you are building a business product, customer-facing
-                mobile application or a new digital idea, your app should make
-                things simpler with an intuitive and seamless user experience.
+                Whether you are developing a business product, a customer-facing
+                mobile application, or a new digital idea, your app should
+                simplify everyday tasks and deliver a smooth, intuitive
+                experience for its users.
               </p>
 
               <p className="mt-5 text-lg leading-8 text-gray-400">
-                At Tiny Dream Games, we provide custom app development services
-                focused on clear user flows, useful functionality, intuitive
-                interfaces and reliable technical foundations. Our mobile app
-                development approach is tailored to your product requirements
-                and designed to support your business as it grows.
+                At Tiny Dream Games, we offer custom app development services
+                focused on intuitive interfaces, practical functionality,
+                seamless user flows, and reliable technical foundations. Our
+                mobile app development solutions are tailored to your product
+                requirements, business needs, and long-term growth goals.
               </p>
 
               <p className="mt-5 text-lg leading-8 text-gray-400">

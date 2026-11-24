@@ -6,11 +6,10 @@ import FAQ from "@/components/FAQ";
 import Reviews from "@/components/reviews";
 import GamePricing from "@/components/game-pricing";
 
-
 export const metadata: Metadata = {
-  title: "Game Development Company | Tiny Dream Games",
+  title: "Game Development Services | Tiny Dream Games",
   description:
-    "Tiny Dream Games creates custom 2D, 3D and mobile games using Unity for businesses and creators.",
+    "Tiny Dream Games offers custom game development services, including 2D, 3D, mobile and Unity game development for businesses, startups and creators.",
 
   alternates: {
     canonical: "/services/game-development",
@@ -21,22 +20,22 @@ export const metadata: Metadata = {
     locale: "en_IN",
     siteName: "Tiny Dream Games",
     url: "/services/game-development",
-    title: "Game Development Company | Tiny Dream Games",
+    title: "Game Development Services | Tiny Dream Games",
     description:
       "Explore game development services by Tiny Dream Games, including Unity game development, custom 2D and 3D games, mobile games and game prototyping.",
     images: [
       {
         url: "/tiny-dream-logo.png",
-        alt: "Tiny Dream Games - Game Development Company",
+        alt: "Tiny Dream Games - Game Development Services",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Game Development Company | Tiny Dream Games",
+    title: "Game Development Services | Tiny Dream Games",
     description:
-      "Custom 2D, 3D and mobile game development using Unity by Tiny Dream Games.",
+      "Custom 2D, 3D, mobile and Unity game development services by Tiny Dream Games.",
     images: ["/tiny-dream-logo.png"],
   },
 
@@ -45,8 +44,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-
 
 
 const gameDevelopmentSchema = {
@@ -180,37 +177,37 @@ const services = [
     number: "01",
     title: "2D Game Development",
     description:
-      "Custom 2D game development with engaging gameplay mechanics, responsive controls, polished visuals and enjoyable player experiences.",
+      "Custom 2D game development featuring engaging gameplay mechanics, responsive controls, polished visuals and immersive player experiences tailored to your game concept.",
   },
   {
     number: "02",
     title: "3D Game Development",
     description:
-      "3D game development featuring interactive environments, characters, gameplay systems and performance-conscious implementation.",
+      "3D game development with interactive environments, character systems, engaging gameplay mechanics and optimized implementation to bring your game ideas to life.",
   },
   {
     number: "03",
     title: "Mobile Game Development",
     description:
-      "Mobile game development focused on intuitive touch controls, optimized performance and smooth gameplay across supported devices.",
+      "Mobile game development with intuitive touch controls, optimized performance and smooth gameplay experiences designed for supported mobile devices.",
   },
   {
     number: "04",
     title: "Game Prototyping",
     description:
-      "Turn your game concept into a playable prototype to test core mechanics, gameplay ideas and the overall player experience.",
+      "Playable game prototypes that help validate core mechanics, test gameplay concepts and evaluate the overall player experience before full-scale development.",
   },
   {
     number: "05",
     title: "Game UI & UX Design",
     description:
-      "User-friendly game interfaces including menus, HUDs, buttons and in-game navigation designed for intuitive interactions.",
+      "Intuitive game interface design, including menus, HUDs, buttons, navigation and interactive elements that create clear and player-friendly experiences.",
   },
   {
     number: "06",
     title: "Game Optimization",
     description:
-      "Improve game performance through bug fixing, asset optimization, profiling and device-focused testing.",
+      "Game performance optimization through profiling, bug fixing, asset optimization and testing to improve stability, responsiveness and performance across supported devices.",
   },
 ];
 
@@ -318,17 +315,18 @@ export default function GameDevelopmentPage() {
               </div>
 
               <h1 className="max-w-3xl text-3xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-5xl lg:text-5xl">
-                Game Development Company
+                Game Development Services
                 <span className="block bg-gradient-to-r from-[#A78BFA] via-[#7C3AED] to-[#FACC15] bg-clip-text text-transparent">
                   Building Games People Remember.
                 </span>
               </h1>
 
               <p className="mt-7 max-w-2xl text-lg leading-8 text-gray-300 sm:text-xl">
-                Tiny Dream Games is a game development company creating engaging
-                2D and 3D games with Unity. From mobile game development to
-                custom game projects, we focus on creative gameplay, thoughtful
-                design and reliable technical performance.
+                Tiny Dream Games offers custom game development services,
+                creating engaging 2D and 3D games using Unity. From mobile game
+                development to custom game projects, we focus on creative
+                gameplay, thoughtful design and reliable technical performance
+                to bring unique gaming ideas to life.
               </p>
 
               <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -415,19 +413,19 @@ export default function GameDevelopmentPage() {
 
             <div>
               <p className="text-lg leading-8 text-gray-300">
-                Great games are built through hundreds of small decisions —
-                gameplay mechanics, controls, visuals, performance and player
-                experience. At Tiny Dream Games, we bring these elements
-                together through thoughtful game development to turn concepts
-                into engaging, playable products.
+                Great games are built through hundreds of thoughtful decisions —
+                from gameplay mechanics and controls to visuals, performance and
+                player experience. At Tiny Dream Games, we bring these elements
+                together through creative game development to transform ideas
+                into engaging and memorable playable experiences.
               </p>
 
               <p className="mt-5 text-lg leading-8 text-gray-400">
-                Whether you have a complete game concept or only a rough idea,
-                our custom game development approach helps shape it into a
-                focused and enjoyable experience. We consider your gameplay
-                vision, target platform and project requirements throughout the
-                development process.
+                Whether you have a fully developed game concept or just an
+                initial idea, our custom game development services help turn
+                your vision into a focused, enjoyable experience. We consider
+                your gameplay goals, target platforms, audience and project
+                requirements at every stage of development.
               </p>
 
               <p className="mt-5 text-lg leading-8 text-gray-400">

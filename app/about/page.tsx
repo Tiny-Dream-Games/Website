@@ -6,9 +6,9 @@ import Footer from "@/components/footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Tiny Dream Games",
+  title: "About Us | Tiny Dream Games",
   description:
-    "Learn about Tiny Dream Games, an independent studio creating original games and developing custom websites and applications.",
+    "Learn about Tiny Dream Games, an independent game development studio creating original games and offering website and app development services.",
 
   alternates: {
     canonical: "/about",
@@ -19,22 +19,22 @@ export const metadata: Metadata = {
     locale: "en_IN",
     siteName: "Tiny Dream Games",
     url: "/about",
-    title: "About Tiny Dream Games",
+    title: "About Us | Tiny Dream Games",
     description:
-      "Discover Tiny Dream Games, our creative approach, and the digital experiences we build.",
+      "Discover Tiny Dream Games, an independent studio focused on game development, original gaming experiences and creative digital solutions.",
     images: [
       {
         url: "/tiny-dream-logo.png",
-        alt: "Tiny Dream Games",
+        alt: "Tiny Dream Games - About Us",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "About Tiny Dream Games",
+    title: "About Us | Tiny Dream Games",
     description:
-      "Learn about Tiny Dream Games and our work in games and digital development.",
+      "Discover Tiny Dream Games, our passion for game development and the digital experiences we create.",
     images: ["/tiny-dream-logo.png"],
   },
 
@@ -49,7 +49,7 @@ const aboutPageSchema = {
   "@type": "AboutPage",
   "@id": "https://www.tinydreamgames.com/about#webpage",
   url: "https://www.tinydreamgames.com/about",
-  name: "About Tiny Dream Games",
+  name: "About Us | Tiny Dream Games",
   isPartOf: {
     "@id": "https://www.tinydreamgames.com/#website",
   },
@@ -108,9 +108,11 @@ export default function AboutPage() {
               </h1>
 
               <p className="mt-8 max-w-2xl text-base leading-8 text-white/45 sm:text-lg">
-                Tiny Dream Games is an independent digital studio focused on
-                creating original games, modern web experiences and mobile
-                applications.
+                Tiny Dream Games is an independent game development studio
+                focused on creating original games and engaging gameplay
+                experiences. Alongside game production, we also offer website
+                and app development services to bring creative digital ideas to
+                life.
               </p>
             </div>
           </div>
@@ -140,27 +142,31 @@ export default function AboutPage() {
 
             <div className="space-y-6 text-sm leading-8 text-white/45 sm:text-base">
               <p>
-                Tiny Dream Games was created with a simple belief: good digital
-                products start with a good idea, but great products are built
-                through thoughtful execution.
+                Tiny Dream Games was built around a simple belief: every great
+                digital experience begins with an idea, but bringing that idea
+                to life requires creativity, thoughtful decisions and careful
+                execution.
               </p>
 
               <p>
-                Our primary focus is game development. We enjoy taking ideas
-                from an early concept and turning them into playable experiences
-                with their own identity, mechanics and visual direction.
+                Our primary focus is game development and game production. We
+                enjoy turning early concepts into playable experiences with
+                distinctive gameplay mechanics, visual identity and a sense of
+                purpose.
               </p>
 
               <p>
-                Alongside our own games, we also build websites and mobile
-                applications for businesses, creators and clients who need
-                reliable digital products designed around their goals.
+                Alongside developing our own games, we offer website and app
+                development services for businesses, startups and clients
+                looking to turn their ideas into practical, reliable digital
+                products.
               </p>
 
               <p>
-                Whether we are building something for ourselves or for a client,
-                the approach remains the same — understand the idea, simplify
-                what matters, build carefully and keep improving.
+                Whether we are creating a game or building a digital solution
+                for a client, our approach stays the same — understand the idea,
+                focus on what matters, build with intention and keep improving
+                every step of the way.
               </p>
             </div>
           </div>
@@ -203,8 +209,9 @@ export default function AboutPage() {
                 </div>
 
                 <p className="text-sm leading-7 text-white/40">
-                  Original games built around gameplay, visual identity,
-                  performance and experiences that are enjoyable to play.
+                  Original game production and custom game development focused
+                  on engaging gameplay, distinctive visual identity, polished
+                  mechanics and enjoyable player experiences.
                 </p>
               </div>
 
@@ -226,9 +233,9 @@ export default function AboutPage() {
                 </div>
 
                 <p className="text-sm leading-7 text-white/40">
-                  Modern, responsive websites designed to communicate clearly,
-                  perform well and give businesses a professional digital
-                  presence.
+                  Modern, responsive and SEO-friendly websites designed to
+                  communicate your brand, showcase your services and establish a
+                  professional online presence for your business.
                 </p>
               </div>
 
@@ -250,9 +257,9 @@ export default function AboutPage() {
                 </div>
 
                 <p className="text-sm leading-7 text-white/40">
-                  Mobile applications built with a focus on intuitive
-                  experiences, maintainable technology and practical product
-                  requirements.
+                  Custom mobile applications built around practical
+                  functionality, intuitive user experiences and reliable
+                  technology to support business needs and product ideas.
                 </p>
               </div>
             </div>
@@ -281,10 +288,10 @@ export default function AboutPage() {
               </div>
 
               <p className="max-w-xl text-sm leading-8 text-white/40 sm:text-base">
-                We believe a strong product comes from balancing creativity with
-                structure. Every project needs a clear direction, a thoughtful
-                development process and enough flexibility to evolve as the idea
-                grows.
+                We believe great products come from balancing creativity with
+                thoughtful execution. Every project deserves a clear direction,
+                a structured development process and the flexibility to evolve
+                as ideas take shape and new possibilities emerge.
               </p>
             </div>
 
@@ -299,8 +306,8 @@ export default function AboutPage() {
                 <h3 className="mt-5 text-xl font-semibold">Think Clearly</h3>
 
                 <p className="mt-4 text-sm leading-7 text-white/35">
-                  We start by understanding the problem, audience and purpose
-                  before jumping into development.
+                  We begin by understanding the problem, audience, goals and
+                  purpose of a project before moving into design or development.
                 </p>
               </div>
 
@@ -312,9 +319,9 @@ export default function AboutPage() {
                 <h3 className="mt-5 text-xl font-semibold">Build Carefully</h3>
 
                 <p className="mt-4 text-sm leading-7 text-white/35">
-                  We care about the details — from interaction and performance
-                  to the small elements people notice without thinking about
-                  them.
+                  We pay attention to the details — from functionality and
+                  performance to interactions and the small design elements that
+                  make an experience feel complete.
                 </p>
               </div>
 
@@ -326,8 +333,9 @@ export default function AboutPage() {
                 <h3 className="mt-5 text-xl font-semibold">Keep Improving</h3>
 
                 <p className="mt-4 text-sm leading-7 text-white/35">
-                  Launching is not the end. Products become better through
-                  feedback, iteration and continuous refinement.
+                  We see every launch as another opportunity to grow. Feedback,
+                  testing and continuous refinement help products become better
+                  over time.
                 </p>
               </div>
             </div>
@@ -360,8 +368,9 @@ export default function AboutPage() {
                   <h3 className="font-semibold">Direct Communication</h3>
 
                   <p className="mt-2 text-sm leading-7 text-white/35">
-                    Clear communication without unnecessary layers between the
-                    idea and the people building it.
+                    Clear, straightforward communication with direct involvement
+                    throughout the project, keeping ideas, decisions and
+                    progress aligned without unnecessary layers.
                   </p>
                 </div>
               </div>
@@ -373,8 +382,9 @@ export default function AboutPage() {
                   <h3 className="font-semibold">Product-Minded Development</h3>
 
                   <p className="mt-2 text-sm leading-7 text-white/35">
-                    We think beyond writing code and focus on how the final
-                    product should actually work for its users.
+                    We look beyond the code to understand the purpose of a
+                    product, how people will use it and what makes the overall
+                    experience useful, intuitive and effective.
                   </p>
                 </div>
               </div>
@@ -386,9 +396,9 @@ export default function AboutPage() {
                   <h3 className="font-semibold">Creative Thinking</h3>
 
                   <p className="mt-2 text-sm leading-7 text-white/35">
-                    We enjoy exploring different ideas, visual directions and
-                    approaches instead of forcing every project into the same
-                    template.
+                    We explore different ideas, gameplay possibilities, visual
+                    directions and development approaches to find solutions that
+                    suit each project's unique goals.
                   </p>
                 </div>
               </div>
@@ -400,8 +410,9 @@ export default function AboutPage() {
                   <h3 className="font-semibold">Long-Term Perspective</h3>
 
                   <p className="mt-2 text-sm leading-7 text-white/35">
-                    We aim to create products and a studio that can grow
-                    steadily rather than chasing short-term results.
+                    We believe in building thoughtfully, learning with every
+                    project and growing steadily through meaningful work rather
+                    than chasing short-term results.
                   </p>
                 </div>
               </div>

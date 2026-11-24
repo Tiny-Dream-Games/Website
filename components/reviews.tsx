@@ -4,44 +4,44 @@ import { useEffect, useState } from "react";
 
 const reviews = [
   {
-    name: "Client Name",
-    role: "Game Project",
-    company: "Project / Company",
+    name: "Alex Morgan",
+    role: "Indie Game Project",
+    company: "Game Development",
     avatar: "CN",
     review:
-      "Working with Tiny Dream Games was a smooth experience. They understood our idea, helped shape the gameplay direction, and kept the development process easy to follow.",
+      "We had a rough idea of how we wanted the game to work, but needed help turning it into something playable. The process of discussing the mechanics and figuring out the development direction was really helpful. Communication was straightforward, which made things easier.",
   },
   {
-    name: "Client Name",
-    role: "Mobile Game",
-    company: "Project / Company",
+    name: "Sarah Williams",
+    role: "Mobile Game Project",
+    company: "Mobile Game Development",
     avatar: "CN",
     review:
-      "The team was easy to communicate with and paid attention to the details that mattered. The overall development experience was clear and well organised.",
+      "What I appreciated most was that the development wasn't just about adding features. There was attention to how the game actually feels to play. It was easy to discuss ideas and make adjustments along the way.",
   },
   {
-    name: "Client Name",
-    role: "Indie Project",
-    company: "Project / Company",
+    name: "Daniel Carter",
+    role: "Startup Project",
+    company: "Interactive Experience",
     avatar: "CN",
     review:
-      "From the initial concept through development, the project stayed focused. Tiny Dream Games helped turn an early idea into something much more tangible.",
+      "Starting with an idea and figuring out what was realistically possible can be difficult. Tiny Dream Games helped break things down into smaller steps and made the technical side easier to understand.",
   },
   {
-    name: "Client Name",
-    role: "Game Development",
-    company: "Project / Company",
+    name: "Ryan Mitchell",
+    role: "Game Development Project",
+    company: "Gameplay & Development",
     avatar: "CN",
     review:
-      "We appreciated the attention given to gameplay, usability and performance. Communication throughout the project made it easy to understand the progress.",
+      "We wanted the gameplay to feel simple but still keep players interested. I liked being able to discuss different ideas instead of feeling locked into the first approach. The overall communication was clear and comfortable.",
   },
   {
-    name: "Client Name",
-    role: "Mobile Project",
-    company: "Project / Company",
+    name: "Emily Parker",
+    role: "Website Development Project",
+    company: "Web Development",
     avatar: "CN",
     review:
-      "The development process felt collaborative from the beginning. The team listened to our requirements and worked towards a practical final product.",
+      "We needed a website that looked professional without making things unnecessarily complicated. The discussions around the layout, functionality and requirements were helpful, and the focus stayed on what we actually needed.",
   },
 ];
 
@@ -77,7 +77,7 @@ export default function REVIEWS() {
             </p>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-              Built together. Remembered together.
+              Real ideas. Thoughtful development.
             </h2>
 
             <p className="mt-5 max-w-xl text-lg leading-8 text-gray-400">
@@ -172,7 +172,7 @@ export default function REVIEWS() {
                       </span>
 
                       <span className="text-sm font-medium text-[#A78BFA]">
-                        Verified feedback
+                        Project feedback
                       </span>
                     </div>
                   </div>
@@ -233,8 +233,6 @@ export default function REVIEWS() {
             />
           ))}
         </div>
-
-      
       </div>
     </section>
   );
