@@ -6,54 +6,55 @@ import Reviews from "@/components/reviews";
 import ProjectEnquiryForm from "@/components/project-enquiry-form";
 const faqs = [
   {
-    question: "What services does Tiny Dream Games offer?",
+    question: "What does Tiny Dream Games specialize in?",
     answer:
-      "Tiny Dream Games offers web development, mobile app development, and game development services. We build custom business websites, web applications, Android apps, and engaging 2D and 3D games based on your project requirements.",
+      "Tiny Dream Games is an independent game development studio focused on creating and producing original games. We work on game concepts, gameplay mechanics, game design, development, and interactive experiences. We also provide website and app development services for businesses and startups.",
   },
   {
-    question: "Do you provide custom website development services?",
+    question: "What types of games does Tiny Dream Games develop?",
     answer:
-      "Yes. We provide custom website development services for businesses, startups, and creators. Our services include responsive business websites, modern Next.js websites, e-commerce solutions, website maintenance, and performance optimization.",
-  },
-  {
-    question: "Do you develop mobile apps for Android and iOS?",
-    answer:
-      "We develop custom mobile applications based on project requirements, including Android apps and mobile-focused digital products. We discuss your goals, required features, target audience, and platform before recommending an appropriate development approach.",
+      "We develop 2D and 3D games, including mobile games and interactive gaming experiences. Our game development approach is tailored to the concept, gameplay mechanics, target audience, and intended platform of each project.",
   },
   {
     question: "Do you offer Unity game development services?",
     answer:
-      "Yes. Our game development services include Unity game development, gameplay mechanics, 2D and 3D game development, and mobile game development. We can help plan and build game experiences according to your concept, features, and target platform.",
+      "Yes. We work with Unity for game development, including gameplay programming, game mechanics, interactive systems, 2D and 3D development, and game features. Development is planned according to your game concept, technical requirements, and target platform.",
   },
   {
-    question: "Can you turn my idea into a website, app, or game?",
+    question: "Can you turn my game idea into a playable game?",
     answer:
-      "Yes. We can discuss your idea, identify the essential features, and plan a suitable development approach. Whether you need a business website, a custom mobile application, or a playable game prototype, the project scope is tailored to your goals.",
+      "Yes. We can discuss your game idea, explore its core gameplay, define essential features, and plan a suitable development approach. Depending on the project scope, we can work toward a playable prototype or a more complete game experience.",
   },
   {
-    question: "How much do website, app, and game development services cost?",
+    question: "How does your game development process work?",
     answer:
-      "The cost of website development, mobile app development, or game development depends on the project's complexity, features, design, technology, and timeline. Contact Tiny Dream Games with your requirements to discuss the scope and an appropriate project estimate.",
+      "Our game development process begins with understanding your concept and vision, followed by planning gameplay mechanics, features, and design direction. We then move into development, testing, refinement, and preparation for the intended release platform.",
   },
   {
-    question: "How long does it take to develop a website, app, or game?",
+    question: "How much does game development cost?",
     answer:
-      "The development timeline depends on the project scope, required features, design complexity, integrations, and testing requirements. We review your goals and requirements before establishing a realistic timeline for your website, application, or game.",
+      "Game development costs depend on the game's scope, gameplay mechanics, art style, features, platform, and development requirements. Contact Tiny Dream Games with your game idea so we can discuss the requirements and provide a suitable project estimate.",
   },
   {
-    question: "Do you provide website maintenance and SEO services?",
+    question: "How long does it take to develop a game?",
     answer:
-      "We can help with website maintenance, technical improvements, performance optimization, and SEO-related implementation. SEO work may include metadata, heading structure, internal linking, and technical checks. Search rankings depend on several factors and cannot be guaranteed.",
+      "Game development timelines vary depending on the type of game, complexity, gameplay systems, art and design requirements, features, and testing. We review the project scope before determining a realistic development timeline.",
   },
   {
-    question: "Can you improve an existing website, app, or game?",
+    question: "Does Tiny Dream Games also develop websites and mobile apps?",
     answer:
-      "Yes. Depending on the project and its existing technology, we can help with bug fixing, feature improvements, responsive design, performance optimization, integrations, and other development requirements. We first review the current product and identify suitable improvements.",
+      "Yes. Alongside our primary focus on game development and production, we provide website development and app development services. We build custom websites, web applications, and mobile-focused digital solutions for businesses, startups, and clients.",
   },
   {
-    question: "How can I start a project with Tiny Dream Games?",
+    question: "Can you improve an existing game or fix bugs?",
     answer:
-      "To start a project, contact Tiny Dream Games through our website and share your idea, preferred platform, required features, and expected timeline. We can discuss your requirements, clarify the project scope, and determine the next steps for your website, mobile app, or game development project.",
+      "Yes. Depending on the game's engine, existing codebase, and project requirements, we can help with bug fixing, gameplay improvements, feature development, optimization, and other technical improvements. We review the existing game before suggesting the next steps.",
+  },
+  {
+    question:
+      "How can I start a game development project with Tiny Dream Games?",
+    answer:
+      "You can start by contacting Tiny Dream Games and sharing your game idea, genre, target platform, planned features, and vision. We will discuss your requirements, explore the development scope, and help determine the next steps for your game project.",
   },
 ];
 export default function Home() {
@@ -104,39 +105,34 @@ export default function Home() {
 
             {/* Heading */}
             <h1 className="text-4xl font-semibold leading-[1.05] tracking-[-0.04em] sm:text-6xl lg:text-6xl">
-              Web, App &amp;
+              Indie Game
               <br />
               <span className="bg-gradient-to-r from-[#A78BFA] via-[#C084FC] to-[#FACC15] bg-clip-text text-transparent">
-                Game Development Studio
+                Development Studio
               </span>
             </h1>
 
             {/* Description */}
 
             <p className="mt-7 max-w-xl text-base leading-8 text-white/60 sm:text-lg">
-              Tiny Dream Games is an independent development studio offering{" "}
+              Tiny Dream Games is an independent game development studio focused
+              on creating and producing original games. From concept and
+              gameplay design to development, we build engaging gaming
+              experiences. We also offer{" "}
               <a
                 href="/services/web-development"
                 className="text-white/80 underline decoration-[#A78BFA]/50 underline-offset-4 transition hover:text-[#A78BFA]"
               >
-                website development services
-              </a>
-              ,{" "}
+                website development
+              </a>{" "}
+              and{" "}
               <a
                 href="/services/app-development"
                 className="text-white/80 underline decoration-[#A78BFA]/50 underline-offset-4 transition hover:text-[#A78BFA]"
               >
-                custom app development
+                app development
               </a>{" "}
-              and{" "}
-              <a
-                href="/services/game-development"
-                className="text-white/80 underline decoration-[#A78BFA]/50 underline-offset-4 transition hover:text-[#A78BFA]"
-              >
-                game development services
-              </a>
-              . We help businesses, startups and creators turn their ideas into
-              modern digital products and engaging gaming experiences.
+              services for businesses and startups.
             </p>
 
             {/* Buttons */}
@@ -502,18 +498,19 @@ export default function Home() {
             </div>
 
             <h2 className="text-4xl font-semibold tracking-[-0.045em] text-white sm:text-5xl lg:text-6xl">
-              Web, App & Game
+              Game Development
               <br />
               <span className="bg-gradient-to-r from-[#A78BFA] via-[#C084FC] to-[#FACC15] bg-clip-text text-transparent">
-                Development Services.
+                & Production.
               </span>
             </h2>
 
             <p className="mt-5 max-w-2xl text-sm leading-7 text-white/45 sm:text-base">
-              Tiny Dream Games is a development studio offering website
-              development, custom app development and game development services.
-              We help businesses, startups and creators turn their ideas into
-              functional digital products and engaging experiences.
+              Tiny Dream Games is an independent game development studio focused
+              on creating and producing original games. From game concepts and
+              gameplay mechanics to development and production, we build
+              engaging gaming experiences. We also provide website and app
+              development solutions for businesses and startups.
             </p>
           </div>
 
@@ -533,7 +530,7 @@ export default function Home() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <path d="M7.5 8h9a4.5 4.5 0 0 1 4.35 5.65l-1.05 4.1a2.5 2.5 0 0 1-4.55.65L14 16H10l-1.25 2.4a2.5 2.5 0 0 1-4.55-.65l-1.05-4.1A4.5 4.5 0 0 1 7.5 8Z" />
+                  <path d="M7.5 8h9a4.5 4.5 0 0 1 4.35 5.65l-1.05 4.1a2.5 2.5 0 0 1-4.55.65L14 16H10l-1.25 2.4a2.5 2.5 0 0 a-4.55-.65l-1.05-4.1A4.5 4.5 0 0 1 7.5 8Z" />
                   <path d="M8 11v4" />
                   <path d="M6 13h4" />
                   <circle
@@ -563,9 +560,9 @@ export default function Home() {
                 </h3>
 
                 <p className="mt-4 text-sm leading-7 text-white/45">
-                  We provide game development services to bring creative
-                  concepts to life. From gameplay programming to interactive
-                  experiences, we focus on building engaging games with Unity.
+                  We develop original games and interactive experiences,
+                  bringing creative concepts to life through gameplay
+                  programming, game mechanics, and development using Unity.
                 </p>
 
                 <div className="mt-7 space-y-3">
@@ -634,9 +631,9 @@ export default function Home() {
                 </h3>
 
                 <p className="mt-4 text-sm leading-7 text-white/45">
-                  Our website development services help businesses, startups and
-                  brands establish a strong online presence through custom,
-                  responsive and SEO-friendly websites.
+                  We create custom, responsive and SEO-friendly websites that
+                  help businesses, startups and brands establish their online
+                  presence and showcase their services effectively.
                 </p>
 
                 <div className="mt-7 space-y-3">
@@ -703,9 +700,9 @@ export default function Home() {
                 </h3>
 
                 <p className="mt-4 text-sm leading-7 text-white/45">
-                  We build custom mobile and web applications tailored to
-                  business requirements, product ideas and user needs, with a
-                  focus on usability and reliable functionality.
+                  We develop custom mobile and web applications tailored to
+                  business requirements, product ideas and user needs, focusing
+                  on intuitive usability and reliable functionality.
                 </p>
 
                 <div className="mt-7 space-y-3">
@@ -801,14 +798,15 @@ export default function Home() {
             </h2>
 
             <p className="mt-5 max-w-2xl text-sm leading-7 text-white/45 sm:text-base">
-              Tiny Dream Games is an independent development studio focused on{" "}
+              Tiny Dream Games is an independent studio focused on{" "}
               <a
                 href="/services/game-development"
                 className="text-white/75 underline decoration-[#A78BFA]/40 underline-offset-4 transition hover:text-[#A78BFA]"
               >
                 game development
               </a>
-              ,{" "}
+              , creating and producing original games through creative ideas,
+              gameplay design and development. We also offer{" "}
               <a
                 href="/services/web-development"
                 className="text-white/75 underline decoration-[#A78BFA]/40 underline-offset-4 transition hover:text-[#A78BFA]"
@@ -821,9 +819,8 @@ export default function Home() {
                 className="text-white/75 underline decoration-[#A78BFA]/40 underline-offset-4 transition hover:text-[#A78BFA]"
               >
                 custom application development
-              </a>
-              . We turn ideas into thoughtfully built digital products and
-              interactive experiences for businesses, startups and creators.
+              </a>{" "}
+              as additional services for businesses, startups and creators.
             </p>
           </div>
 
@@ -839,27 +836,28 @@ export default function Home() {
                 </span>
 
                 <h3 className="mt-4 max-w-xl text-2xl font-semibold tracking-[-0.03em] text-white sm:text-3xl">
-                  Building digital products and games from idea to experience.
+                  Creating games from imagination to experience.
                 </h3>
 
                 <div className="mt-6 space-y-5 text-sm leading-7 text-white/45">
                   <p>
-                    We believe every meaningful digital product starts with an
-                    idea. The right combination of creative thinking, thoughtful
-                    design and reliable development can turn that idea into
-                    something people can use and enjoy.
+                    We believe every great game starts with an idea. Through
+                    creative thinking, gameplay design and development, we turn
+                    ideas into interactive experiences that players can explore,
+                    enjoy and remember.
                   </p>
 
                   <p>
-                    Our work focuses on three areas: creating original games,
-                    developing modern websites and building custom applications
-                    for businesses, startups and creators.
+                    Our primary focus is game development and production,
+                    including original game concepts, gameplay mechanics,
+                    interactive systems and building games with Unity.
                   </p>
 
                   <p>
-                    Whether it is a website for a growing business, a custom
-                    application or an original game project, we aim to build
-                    solutions around real requirements and a clear purpose.
+                    Alongside game production, we also develop modern websites
+                    and custom applications for businesses, startups and
+                    creators, turning their ideas into practical digital
+                    solutions.
                   </p>
                 </div>
 
@@ -901,9 +899,9 @@ export default function Home() {
                     </h4>
 
                     <p className="mt-2 text-sm leading-6 text-white/40">
-                      Every feature and design decision should serve a clear
-                      purpose and make the final product more useful and
-                      meaningful.
+                      Every game mechanic, feature and design decision should
+                      contribute to the gameplay and create a meaningful player
+                      experience.
                     </p>
                   </div>
                 </div>
@@ -934,9 +932,9 @@ export default function Home() {
                     </h4>
 
                     <p className="mt-2 text-sm leading-6 text-white/40">
-                      We combine creative thinking with practical development to
-                      build digital experiences that look good and work as
-                      intended.
+                      We combine creativity, game design and technical
+                      development to bring original ideas to life and build
+                      experiences that work as intended.
                     </p>
                   </div>
                 </div>
@@ -968,8 +966,9 @@ export default function Home() {
                     </h4>
 
                     <p className="mt-2 text-sm leading-6 text-white/40">
-                      We keep exploring new ideas, development tools and
-                      technologies to improve the way we approach every project.
+                      We continuously explore new game ideas, technologies,
+                      tools and techniques to improve how we design and develop
+                      every experience.
                     </p>
                   </div>
                 </div>
@@ -989,8 +988,8 @@ export default function Home() {
               </h4>
 
               <p className="mt-2 text-sm leading-6 text-white/35">
-                Creating original games, gameplay mechanics and interactive
-                experiences with Unity.
+                Creating and producing original games, gameplay mechanics and
+                interactive experiences using Unity.
               </p>
             </div>
 
@@ -1004,8 +1003,8 @@ export default function Home() {
               </h4>
 
               <p className="mt-2 text-sm leading-6 text-white/35">
-                Developing modern websites and custom applications around
-                business and product requirements.
+                Developing modern websites and custom applications as additional
+                services around business and product requirements.
               </p>
             </div>
 
@@ -1015,12 +1014,12 @@ export default function Home() {
               </span>
 
               <h4 className="mt-3 text-lg font-semibold text-white">
-                Client Solutions
+                Creative Game Experiences
               </h4>
 
               <p className="mt-2 text-sm leading-6 text-white/35">
-                Helping businesses and creators turn their ideas into practical
-                digital solutions.
+                Exploring creative concepts and building engaging gameplay
+                experiences from initial idea through development.
               </p>
             </div>
           </div>
@@ -1068,28 +1067,29 @@ export default function Home() {
               <div className="mb-6 flex items-center gap-3">
                 <span className="h-px w-9 bg-[#FACC15]" />
                 <span className="text-[10px] font-medium uppercase tracking-[0.25em] text-[#A78BFA]">
-                  How We Work
+                  Our Game Development Process
                 </span>
               </div>
 
               <h2 className="max-w-xl text-4xl font-semibold leading-[1.02] tracking-[-0.055em] sm:text-5xl lg:text-[60px]">
-                From first idea
+                From game idea
                 <br />
                 <span className="bg-gradient-to-r from-[#A78BFA] via-[#C084FC] to-[#FACC15] bg-clip-text text-transparent">
-                  to final product.
+                  to playable experience.
                 </span>
               </h2>
 
               <p className="mt-6 max-w-md text-sm leading-7 text-white/35">
-                Our website, app and game development process is built around
-                clear communication, careful planning and thoughtful execution.
-                We keep every stage simple and focused on your project goals.
+                Our game development process takes ideas from concept to
+                completion through thoughtful planning, creative design and
+                development. Every stage is focused on building engaging
+                gameplay and meaningful player experiences.
               </p>
 
               {/* Small philosophy */}
               <div className="mt-10 hidden border-l border-[#7C3AED]/30 pl-5 lg:block">
                 <p className="text-sm leading-6 text-white/50">
-                  Good work doesn't need unnecessary complexity.
+                  Great games begin with ideas and grow through creativity.
                 </p>
 
                 <p className="mt-2 text-[10px] uppercase tracking-[0.18em] text-white/20">
@@ -1119,14 +1119,13 @@ export default function Home() {
                     </div>
 
                     <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-white">
-                      Let's talk.
+                      Explore the idea.
                     </h3>
 
                     <p className="mt-3 max-w-xl text-sm leading-7 text-white/35">
-                      We learn about your business, project idea, target
-                      audience and goals. This helps us understand what you
-                      need, whether it's a business website, custom app or game
-                      development project.
+                      We explore your game concept, vision, target players and
+                      core idea. This helps us understand what makes your game
+                      unique and what experience we want to create.
                     </p>
                   </div>
 
@@ -1157,14 +1156,13 @@ export default function Home() {
                     </div>
 
                     <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-white">
-                      Shape the idea.
+                      Shape the gameplay.
                     </h3>
 
                     <p className="mt-3 max-w-xl text-sm leading-7 text-white/35">
-                      We define the project scope, required features, design
-                      direction, technology and development approach before work
-                      begins. The plan is tailored to your specific website,
-                      application or game requirements.
+                      We shape the concept into a development plan, defining
+                      gameplay mechanics, features, art direction and technical
+                      requirements before development begins.
                     </p>
                   </div>
 
@@ -1193,14 +1191,14 @@ export default function Home() {
                     </div>
 
                     <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-white">
-                      Make it real.
+                      Bring it to life.
                     </h3>
 
                     <p className="mt-3 max-w-xl text-sm leading-7 text-white/35">
-                      We bring the plan to life through design, programming and
-                      development. From responsive website development and
-                      custom applications to Unity game development, each
-                      project is built around its intended experience.
+                      We bring the game to life through design, programming and
+                      development. From gameplay systems to visual elements,
+                      every component works together to create the intended
+                      player experience.
                     </p>
                   </div>
 
@@ -1224,19 +1222,18 @@ export default function Home() {
                     <div className="flex items-center gap-2">
                       <span className="h-1.5 w-1.5 rounded-full bg-[#FACC15] shadow-[0_0_10px_rgba(250,204,21,0.5)]" />
                       <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-[#FACC15]">
-                        Launch
+                        Refine & Release
                       </span>
                     </div>
 
                     <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-white">
-                      Ship & grow.
+                      Polish the experience.
                     </h3>
 
                     <p className="mt-3 max-w-xl text-sm leading-7 text-white/35">
-                      We test functionality, refine the experience and prepare
-                      the completed project for delivery or launch. Further
-                      improvements can be planned as your business or product
-                      evolves.
+                      We test gameplay, fix issues and refine the overall
+                      experience. Once everything is ready, we prepare the game
+                      for its intended release platform.
                     </p>
                   </div>
 
@@ -1254,7 +1251,7 @@ export default function Home() {
               <span className="h-1.5 w-1.5 rounded-full bg-[#FACC15] shadow-[0_0_10px_rgba(250,204,21,0.5)]" />
 
               <p className="text-xs text-white/30">
-                Clear communication. Thoughtful development.
+                Thoughtful design. Engaging gameplay. Meaningful experiences.
               </p>
             </div>
 

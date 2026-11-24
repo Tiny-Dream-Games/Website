@@ -8,7 +8,7 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist({
+const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
@@ -16,13 +16,17 @@ const geistMono = Geist({
 const SITE_URL = "https://www.tinydreamgames.com";
 const SITE_NAME = "Tiny Dream Games";
 
+const META_TITLE = "Tiny Dream Games | Indie Game Development Studio";
+
+const META_DESCRIPTION =
+  "Tiny Dream Games is an independent game development studio focused on creating, developing and producing original games and engaging interactive experiences.";
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
 
-  title: "Web, App & Game Development Studio | Tiny Dream Games",
+  title: META_TITLE,
 
-  description:
-    "Tiny Dream Games is an independent development studio offering website, custom app and game development services for businesses, startups and creators.",
+  description: META_DESCRIPTION,
 
   alternates: {
     canonical: "/",
@@ -33,24 +37,22 @@ export const metadata: Metadata = {
     locale: "en_IN",
     siteName: SITE_NAME,
     url: "/",
-    title: "Web, App & Game Development Studio | Tiny Dream Games",
-    description:
-      "Explore website development, custom app development and game development services by Tiny Dream Games for businesses, startups and creators.",
+    title: META_TITLE,
+    description: META_DESCRIPTION,
     images: [
       {
         url: "/tiny-dream-logo.png",
         width: 1200,
         height: 630,
-        alt: "Tiny Dream Games - Web, App and Game Development Studio",
+        alt: "Tiny Dream Games - Indie Game Development Studio",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Web, App & Game Development Studio | Tiny Dream Games",
-    description:
-      "Website development, custom applications and original game development by Tiny Dream Games.",
+    title: META_TITLE,
+    description: META_DESCRIPTION,
     images: ["/tiny-dream-logo.png"],
   },
 
@@ -74,14 +76,22 @@ const globalSchema = {
       name: SITE_NAME,
       url: `${SITE_URL}/`,
       description:
-        "Tiny Dream Games is an independent development studio offering website development, custom app development and game development services.",
+        "Tiny Dream Games is an independent game development studio focused on creating and producing original games, gameplay experiences and interactive projects. The studio also provides website and app development services.",
       knowsAbout: [
-        "Website Development",
+        "Indie Game Development",
+        "Game Development",
+        "Game Production",
+        "Game Design",
+        "Gameplay Mechanics",
+        "Unity Game Development",
+        "2D Game Development",
+        "3D Game Development",
+        "Mobile Game Development",
+        "Interactive Game Experiences",
         "Web Development",
+        "Website Development",
         "App Development",
         "Mobile Application Development",
-        "Game Development",
-        "Unity Game Development",
       ],
     },
     {
@@ -119,6 +129,23 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
+        {/* Google Tag Manager */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-53NX84H6"
+        />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      `,
+          }}
+        />
+
+        {/* Ahrefs Analytics */}
         <script
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="pDkJ/9cOt5/5tiMGhIDRjA"
