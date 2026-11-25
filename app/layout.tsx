@@ -1,7 +1,9 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import type React from "react";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -128,33 +130,32 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <head>
-        {/* Google Tag Manager */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtm.js?id=GTM-53NX84H6"
-        />
+      <body className="min-h-full flex flex-col">
+        <GlobalJsonLd />
 
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-      `,
-          }}
+        {/* Google Tag Manager */}
+        <Script id="gtm-init" strategy="afterInteractive">
+          {`
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js'
+    });
+  `}
+        </Script>
+
+        <Script
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-53NX84H6"
+          strategy="afterInteractive"
         />
 
         {/* Ahrefs Analytics */}
-        <script
+        <Script
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="pDkJ/9cOt5/5tiMGhIDRjA"
-          async
+          strategy="afterInteractive"
         />
-      </head>
 
-      <body className="min-h-full flex flex-col">
-        <GlobalJsonLd />
         {children}
       </body>
     </html>

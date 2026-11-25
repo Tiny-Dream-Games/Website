@@ -225,6 +225,12 @@ export default function Navbar() {
           >
             Contact
           </a>
+          <a
+            href="/blog"
+            className="text-sm text-white/70 transition hover:text-white"
+          >
+           Blogs
+          </a>
 
           <a
             href="/#contact"
@@ -305,6 +311,12 @@ export default function Navbar() {
               className="block rounded-xl px-4 py-3 text-sm text-white/70 transition hover:bg-white/5 hover:text-white"
             >
               Contact
+            </a>
+            <a
+              href="/blog"
+              className="block rounded-xl px-4 py-3 text-sm text-white/70 transition hover:bg-white/5 hover:text-white"
+            >
+              Blogs
             </a>
 
             <a

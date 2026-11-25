@@ -155,38 +155,23 @@ export default function Navbar() {
               </a>
 
               <a
-                href="#games"
-                className="w-fit text-sm text-white/45 transition hover:translate-x-1 hover:text-white"
-              >
-                Games
-              </a>
-
-              <a
-                href="#services"
-                className="w-fit text-sm text-white/45 transition hover:translate-x-1 hover:text-white"
-              >
-                Services
-              </a>
-
-              <a
-                href="#about"
+                href="/about"
                 className="w-fit text-sm text-white/45 transition hover:translate-x-1 hover:text-white"
               >
                 About
               </a>
 
               <a
-                href="#process"
-                className="w-fit text-sm text-white/45 transition hover:translate-x-1 hover:text-white"
-              >
-                Process
-              </a>
-
-              <a
-                href="#contact"
+                href="/contact"
                 className="w-fit text-sm text-white/45 transition hover:translate-x-1 hover:text-white"
               >
                 Contact
+              </a>
+              <a
+                href="/blog"
+                className="w-fit text-sm text-white/45 transition hover:translate-x-1 hover:text-white"
+              >
+                Blogs
               </a>
             </nav>
           </div>
