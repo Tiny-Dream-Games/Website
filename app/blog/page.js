@@ -36,7 +36,7 @@ export const metadata = {
   description:
     "Explore game development guides, mobile game costs, game design insights and practical knowledge from Tiny Dream Games.",
   alternates: {
-    canonical: "https://tinydreamgames.com/blog",
+    canonical: "https://www.tinydreamgames.com/blog",
   },
 };
 
