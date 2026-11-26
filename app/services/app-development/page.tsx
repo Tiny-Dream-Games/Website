@@ -10,7 +10,7 @@ import AppPricing from "@/components/app-pricing";
 export const metadata: Metadata = {
   title: "App Development Services | Tiny Dream Games",
   description:
-    "Tiny Dream Games offers custom app development services, building mobile apps and web applications tailored to the needs of businesses, startups, and growing brands.",
+    "Tiny Dream Games develops custom mobile apps and web applications for businesses, startups, and growing brands.",
 
   alternates: {
     canonical: "/services/app-development",
